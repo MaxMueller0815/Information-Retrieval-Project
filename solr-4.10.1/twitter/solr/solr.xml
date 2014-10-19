@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<solr persitent="true">
+	<cores adminPath="/admin/cores">
+		<core name="collection1" instanceDir="tweets" />
+		<core name="collection2" instanceDir="users" />
+
+		<shardHandlerFactory name="shardHandlerFactory" class="HttpShardHandlerFactory">
+     		<str name="urlScheme">${urlScheme:}</str>
+  	 	</shardHandlerFactory>
+	</cores>
+</solr>
