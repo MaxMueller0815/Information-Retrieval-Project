@@ -1,3 +1,50 @@
+li {
+	float:left;
+}
+
+label {
+	margin:0px;
+}
+
+h2{
+	margin-bottom: 3px;
+}
+
+#tweet-container{
+	height: 800px;
+}
+
+#one-tweet{
+	height: 150px;
+	border-color: lightgrey;
+	border-style: solid;
+	border-radius: 3px;
+	background: white;
+}
+
+#orange{
+	position: relative;
+	height:700px;
+}
+
+#search-again {
+	position: relative;
+	bottom: -350px;
+	right:70px;
+	width: 500px;
+	height:50px;
+}
+
+#filter-title{
+	font-size: 35px;
+	margin: 25px auto 20px 50px;
+}
+
+#filter-terms{
+	font-size: 30px;
+	margin-left: 80px;
+}
+
 #last-search-terms {
 	height: 400px;
 }
@@ -6,6 +53,9 @@
 	height: 300px;
 }
 
+.vorschlag{
+	height:300px;
+}
 
 .my-jumbotron{
 	border-color: grey;

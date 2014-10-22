@@ -55,38 +55,160 @@
 
           <div id="popular-search-terms">
             Beliebte Suchbegriffe:
+            <ul>
+              <li class="col-sm-12"><a href="" data-toggle="tab">Apple</a></li>
+              <li class="col-sm-12"><a href="" data-toggle="tab">#Swift</a></li>
+              <li class="col-sm-12"><a href="" data-toggle="tab">iOS</a></li>
+              <li class="col-sm-12"><a href="" data-toggle="tab">#OSX1010</a></li>
+              <li class="col-sm-12"><a href="" data-toggle="tab">beats</a></li>
+            </ul>
           </div>
-
-
         </div>
-        <div class="jumbotron col-sm-4 my-jumbotron">Twitter ergebnisse</div>
+
+        <div class="jumbotron col-sm-4 my-jumbotron">
+          <div id="tweet-container" class="col-sm-12">
+            <div id="one-tweet" class="col-sm-12">
+              
+            </div>
+          </div>
+        </div>
+
         <div class="jumbotron col-sm-5 my-jumbotron">
-        
- 
           <!- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert------->
           <div id="content">
               <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-                  <li class="active"><a href="#red" data-toggle="tab">Vorschläge</a></li>
-                  <li><a href="#orange" data-toggle="tab">Filter</a></li>
+                  <li class="active"><a href="#red" data-toggle="tab">Filter</a></li>
+                  <li><a href="#orange" data-toggle="tab">Vorschläge</a></li>
                   <li><a href="#yellow" data-toggle="tab">Verlauf</a></li>
                   <li><a href="#green" data-toggle="tab">Favoriten</a></li>
               </ul>
               <div id="my-tab-content" class="tab-content">
+
                   <div class="tab-pane active" id="red">
-                      <h1>Vorschläge</h1>
-                      <p>hier kommen Vorschläge rein</p>
+
+                      <p id="filter-title">Gewichtung der einzelnen Suchterme</p>
+                      <div id="filter-terms">
+                        <div class="checkboxes">
+                          <label><input type="checkbox" value=""> Hashtags</label>
+                        </div>
+                        <div class="checkboxes">
+                          <label><input type="checkbox" value=""> Personen</label>
+                        </div>
+                        <div class="checkboxes">
+                          <label><input type="checkbox" value=""> Produkte</label>
+                        </div>
+                        <div class="checkboxes">
+                          <label><input type="checkbox" value=""> Ort</label>
+                        </div>
+                      </div>
+                      
                   </div>
+
                   <div class="tab-pane" id="orange">
-                      <h1>Filter</h1>
-                      <p>Optionen</p>
+                    <div class="vorschlag col-sm-3">
+                      <h2>Hashtags</h2>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> #Apple</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> #Swift</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> #iOS</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> #OSX1010</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> #beats</label>
+                      </div>
+                    </div>
+
+                    <div class="vorschlag col-sm-3">
+                      <h2>Personen</h2>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Person A</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Person B</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Person C</label>
+                      </div>
+                    </div>
+
+                    <div class="vorschlag col-sm-3">
+                      <h2>Produkte</h2>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Produkt A</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Produkt B</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Produkt C</label>
+                      </div>
+                    </div>
+
+                    <div class="vorschlag col-sm-3">
+                      <h2>Ort</h2>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Ort A</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Ort B</label>
+                      </div>
+                      <div class="checkboxes">
+                        <label><input type="checkbox" value=""> Ort C</label>
+                      </div>
+                    </div>
+
+                    <div class="vorschlag col-sm-3">
+                      <h2>Eigene</h2>
+                      <div class="row">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox">
+                            </span>
+                            <input type="text" class="form-control">
+                          </div><!-- /input-group -->
+                      </div><!-- /.row -->
+                      <div class="row">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox">
+                            </span>
+                            <input type="text" class="form-control">
+                          </div><!-- /input-group -->
+                      </div><!-- /.row -->
+                      <div class="row">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox">
+                            </span>
+                            <input type="text" class="form-control">
+                          </div><!-- /input-group -->
+                      </div><!-- /.row -->
+                      <div class="row">
+                          <div class="input-group">
+                            <span class="input-group-addon">
+                              <input type="checkbox">
+                            </span>
+                            <input type="text" class="form-control">
+                          </div><!-- /input-group -->
+                      </div><!-- /.row -->
+                    </div>
+
+                    <button id="search-again" type="button" class="btn btn-info">Search Again!</button>
+
                   </div>
+
+
                   <div class="tab-pane" id="yellow">
-                      <h1>Verlauf</h1>
-                      <p>Der Verlauf, der angeschauten tweets</p>
+                      <h3>Hier befindet sich der Verlauf deiner angeschauten Tweets:</h3>
                   </div>
                   <div class="tab-pane" id="green">
-                      <h1>Favoriten</h1>
-                      <p>gespeicherte Favoriten</p>
+                      <h3>Hier sind deine favorisierten Tweets aufgelistet:</h3>
                   </div>
               </div>
           </div>
