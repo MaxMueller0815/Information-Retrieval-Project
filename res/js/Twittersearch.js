@@ -1,23 +1,35 @@
-var Manager;
+var TweetManager;
+var UserManager;
+
 (function ($) {
 	$(function () {
-		Manager = new AjaxSolr.Manager({
-			solrUrl: 'http://localhost:8983/solr/'
+		TweetManager = new AjaxSolr.Manager({
+			solrUrl: 'http://localhost:8983/solr/collection1/'
 		});
-		Manager.addWidget(new AjaxSolr.ResultWidget({
+		TweetManager.addWidget(new AjaxSolr.ResultWidget({
 			id: 'result',
-			target: '#one-tweet'
+			target: '#docs'
 		}));
-		Manager.init();
+		TweetManager.init();
+
+		UserManager = new AjaxSolr.Manager({
+			solrUrl: 'http://localhost:8983/solr/collection2/'
+		});
 
 		$("#search").submit(function(event) {
-			requestFullText($("#search-field").val());
+			var term = $("#search-field").val();
+			requestFullText(term);
+			addToPrevious(term)
 			event.preventDefault();
 		});
 	});
 
 	var requestFullText = function(term) {
-		Manager.store.addByValue('q', 'content:' + term);
-		Manager.doRequest();
+		TweetManager.store.addByValue('q', 'content:' + term);
+		TweetManager.doRequest();
+	};
+
+	var addToPrevious = function(term) {
+		$("#previous").append("<p>" + term + "</p>")
 	};
 })(jQuery);

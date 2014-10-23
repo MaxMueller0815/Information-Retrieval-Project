@@ -14,6 +14,15 @@ h2{
 	height: 800px;
 }
 
+#docs{
+	background-color: white;
+	border: groove;
+	overflow-x: auto;
+	height: 95%;
+	padding: 10px;
+	font-size: 15px;
+}
+
 #one-tweet{
 	height: 150px;
 	border-color: lightgrey;
@@ -83,4 +92,11 @@ h2{
 
 .text-large {
 	font-size: 30px;
+}
+
+.profile-picture {
+	height: 40px;
+	width: 40px;
+	float: left;
+	margin-right: 10px;
 }

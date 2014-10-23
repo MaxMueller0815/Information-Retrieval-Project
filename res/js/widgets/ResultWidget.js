@@ -9,7 +9,12 @@
 		},
 
 		template: function (doc) {
-			var output = '<div><p>' + doc.content + '</div>';
+			var output = "<div><p> " +
+			"<img class='profile-picture' src='" + doc.image_url + "'/>" +
+			doc.screen_name + "</br>" + 
+			doc.time + "     " + doc.date +
+			"</p></div>" +
+			"<div><p>" + doc.content + "</p></div>";
 			return output;
 		}
 	});
