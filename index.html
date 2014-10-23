@@ -17,6 +17,25 @@
     <![endif]-->
     <link rel="stylesheet" href="res/css/search_engine.css">
 
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="libs/jquery-2.0.3.min.js"></script>
+    <script src="libs/underscore-min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--ajax solr -->
+    <script src="libs/core/Core.js"></script>
+    <script src="libs/core/AbstractManager.js"></script>
+    <script src="libs/managers/Manager.jquery.js"></script>
+    <script src="libs/core/Parameter.js"></script>
+    <script src="libs/core/ParameterStore.js"></script>
+    <script src="libs/core/AbstractWidget.js"></script>
+    <script src="res/js/widgets/ResultWidget.js"></script>
+    <script src="res/js/Twittersearch.js"></script>
+
   </head>
   <body>
     <nav class="navbar navbar-default" role="navigation">
@@ -34,11 +53,11 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <form class="navbar-form navbar-left" role="search">
+          <form class="navbar-form navbar-left" role="search" id="search">
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="Tweets durchsuchen...">
+              <input id="search-field" type="text" class="form-control" placeholder="Tweets durchsuchen...">
             </div>
-            <button type="submit " class="btn btn-lg btn-info btn-default glyphicon glyphicon-search search-button"> </button>
+            <button type="submit" class="btn btn-lg btn-info btn-default glyphicon glyphicon-search search-button"> </button>
           </form>
 
         </div><!-- /.navbar-collapse -->
@@ -68,13 +87,13 @@
         <div class="jumbotron col-sm-4 my-jumbotron">
           <div id="tweet-container" class="col-sm-12">
             <div id="one-tweet" class="col-sm-12">
-              
+              <div id="docs"></div>
             </div>
           </div>
         </div>
 
         <div class="jumbotron col-sm-5 my-jumbotron">
-          <!- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert------->
+          <!-- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert-->
           <div id="content">
               <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
                   <li class="active"><a href="#red" data-toggle="tab">Filter</a></li>
@@ -217,17 +236,5 @@
                 $('#tabs').tab();
             });
         </script>    
-
-
- 
-        <script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
-
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="libs/jquery-2.0.3.min.js"></script>
-    <script src="libs/underscore-min.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
