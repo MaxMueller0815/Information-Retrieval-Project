@@ -10,6 +10,54 @@ h2{
 	margin-bottom: 3px;
 }
 
+.name-container {
+	font-size: 16px;
+}
+
+.avatar{
+	padding: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+
+.text-container{
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.tweet-date, .tweet-time {
+	font-size: 14px;
+	color: #BBB;
+}
+
+.one-tweet{
+	border-color: lightgrey;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 3px;
+	background: white;
+	float:left;
+}
+
+.one-tweet:hover {
+	background-color:#F5F5F5;
+}
+
+.one-tweet:active {
+	background-color:#EEE;
+}
+
+.addFav-button{
+	position: relative;
+	float:right;
+	width: 50px;
+	height:40px;
+	line-height: normal;
+	vertical-align: middle;
+	margin-bottom: 5px
+}
+
 #tweet-container{
 	height: 800px;
 }
@@ -19,16 +67,8 @@ h2{
 	border: groove;
 	overflow-x: auto;
 	height: 95%;
-	padding: 10px;
+	padding: 5px;
 	font-size: 15px;
-}
-
-#one-tweet{
-	height: 150px;
-	border-color: lightgrey;
-	border-style: solid;
-	border-radius: 3px;
-	background: white;
 }
 
 #orange{
@@ -72,7 +112,7 @@ h2{
 	border-width: 3px;
 	margin-left: 2px;
 	border-radius: 5px;
-	padding:15px;
+	padding:3px;
 	height:800px;
 }
 
