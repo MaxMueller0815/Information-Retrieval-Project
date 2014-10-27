@@ -10,7 +10,7 @@
 
 		template: function (doc) {
 			var output = "<div id='"+ doc.status_id+"' class='one-tweet col-sm-12'><div id='bild-container'> " +
-			"<img class='avatar col-sm-2' src='" + doc.image_url + "'alt='' />" + 
+			"<img class='avatar col-sm-2' onerror=\"this.src = 'res/images/no_image.png' ;\" src='" + doc.image_url + "'alt='' />" + 
 			"</div>" +
 			"<div class='name-container col-sm-10'>"+
 				"<span class='user-name name-container-content'>" + doc.screen_name + " </span>"+

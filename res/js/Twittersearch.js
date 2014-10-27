@@ -26,6 +26,7 @@ var UserManager;
 
 	var requestFullText = function(term) {
 		TweetManager.store.addByValue('q', 'content:' + term);
+		TweetManager.store.addByValue('q', 'hashtag:wwdc');
 		TweetManager.doRequest();
 	};
 
