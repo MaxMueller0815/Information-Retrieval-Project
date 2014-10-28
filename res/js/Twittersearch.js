@@ -31,6 +31,6 @@ var UserManager;
 	};
 
 	var addToPrevious = function(term) {
-		$("#previous").append("<p>" + term + "</p>")
+		$("#last-search-terms").append("<p class='previous-search-term'>" + term + "</p>")
 	};
 })(jQuery);
