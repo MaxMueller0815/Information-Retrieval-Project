@@ -1,11 +1,12 @@
 SearchEngine.MainController = (function() {
 	var that = {},
-	UIController ,
+	uiController ,
+	searchController,
 
-	init = function(uiController) {
+	init = function(UIController, SearchController) {
 		
 		uiController = UIController;
-
+		searchController = SearchController;
 		return that;
 	};
 	

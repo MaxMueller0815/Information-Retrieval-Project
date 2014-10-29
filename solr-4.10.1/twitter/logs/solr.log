@@ -7021,3 +7021,5 @@ INFO  - 2014-10-29 00:53:31.860; org.apache.solr.core.SolrCore; [collection1] we
 INFO  - 2014-10-29 00:53:32.045; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=a&json.wrf=jQuery1111015774893516870792_1414540151348&wt=json&_=1414540151362} status=0 QTime=0 
 INFO  - 2014-10-29 00:53:32.169; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=an&json.wrf=jQuery1111015774893516870792_1414540151348&wt=json&_=1414540151363} status=0 QTime=0 
 INFO  - 2014-10-29 00:53:33.257; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:an&json.wrf=jQuery1111015774893516870792_1414540151348&wt=json&_=1414540151364} hits=4236 status=0 QTime=1 
+INFO  - 2014-10-29 01:13:10.046; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=a&json.wrf=jQuery111107552662244735843_1414541435290&wt=json&_=1414541435291} status=0 QTime=1 
+INFO  - 2014-10-29 01:13:12.814; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=&json.wrf=jQuery111107552662244735843_1414541435290&wt=json&_=1414541435292} status=0 QTime=0 

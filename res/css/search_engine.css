@@ -39,7 +39,7 @@ h2{
 	color: #BBB;
 }
 
-.one-tweet{
+.one-tweet, .term-box{
 	border-color: lightgrey;
 	border-style: solid;
 	border-width: 2px;
@@ -47,6 +47,8 @@ h2{
 	background: white;
 	float:left;
 }
+
+
 
 .one-tweet:hover {
 	background-color:#F5F5F5;
@@ -66,11 +68,36 @@ h2{
 	margin-bottom: 5px
 }
 
+.previous-search-term{
+	color: black;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.previous-search-term:hover{
+	background: lightgrey;
+}
+
+#button-show-right{
+	float:right;
+	height: 760px;
+	vertical-align: middle;
+	padding-top:350px;
+}
+
 #tweet-container{
 	height: 800px;
 }
 
-#docs{
+#verlauf-container{
+	height: 700px;
+}
+
+#fav-container{
+	height: 700px;
+}
+
+#docs, #verlauf, #fav{
 	background-color: white;
 	border: groove;
 	overflow-x: auto;
@@ -102,8 +129,9 @@ h2{
 	margin-left: 80px;
 }
 
-#last-search-terms {
+#last-search-terms-container {
 	height: 400px;
+	overflow-x:auto;
 }
 
 #popular-search-terms {
