@@ -1,5 +1,4 @@
 var TweetManager;
-var UserManager;
 
 (function ($) {
 	$(function () {
@@ -18,15 +17,19 @@ var UserManager;
 
 		$("#search").submit(function(event) {
 			var term = $("#search-field").val();
-			requestFullText(term);
+			requestFullText("content:" + term);
 			addToPrevious(term)
+			event.preventDefault();
+		});
+
+		$("#search-again").click(function(event) {
+			requestFullText(buildQuery());
 			event.preventDefault();
 		});
 	});
 
 	var requestFullText = function(term) {
-		TweetManager.store.addByValue('q', 'content:' + term);
-		TweetManager.store.addByValue('q', 'hashtag:wwdc');
+		TweetManager.store.addByValue('q', term);
 		TweetManager.doRequest();
 	};
 
