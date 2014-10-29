@@ -2,6 +2,7 @@ SearchEngine.UIController = (function() {
 	var that = {},
 	$searchTerm,
 	$buttonShowRight,
+	$buttonSearch,
 	isRightSighthidden = false,
 
 	init = function() {
@@ -31,17 +32,53 @@ SearchEngine.UIController = (function() {
 
 		//um zu sehen, welches element angeklickt wird
 		$(document).click(function(e) {
-    		console.log(e.target);//e.target will be the dom element that was clicked on
+    		// console.log(e.target);//e.target will be the dom element that was clicked on
 		});
 		$searchTerm.on('click', _handleClickOnTerm);
 
+		_registerExtraListener();
 
 	},
 
+	_registerExtraListener = function () {
+		$buttonSearch.on('click', _handleClickOnSearch);
+		_addToFav();
+		_openTweetAndAddToVerlauf();
+		
+	},
+
+	_handleClickOnSearch = function () {
+		document.getElementById("search-button").onclick = null;
+		console.log("fucking button was clicked");
+		_addToFav();
+	},
+
+	_addToFav = function () {
+		console.log("ooi");
+		$(".one-tweet").on("click", "button.addFav-button", function () {
+			var tweet = $(this).parents(".one-tweet").html();
+			console.log("shiiiiiit");
+			$(".fav-punkt").append("<div class='one-tweet col-sm-9'>" + tweet + "</div>");
+
+	        // var sel = $(this).text(),
+	        //     ul = $(this).parents("ul");
+	        // console.log(sel);
+	        // ul.find("span").text(sel);
+	        // ul.children("li:not('#first')").toggle();
+	        // ul.find("li").removeClass("selected_option");
+	        // ul.toggleClass("open");
+	        // $(this).addClass("selected_option");
+    	});
+	},
+
+	_openTweetAndAddToVerlauf = function () {
+
+	},
 
 	_initUI = function () {
 		$searchTerm = $('.previous-search-term');
 		$buttonShowRight = $('#button-show-right');
+		$buttonSearch = $('#search-button');
 	};
 
 	that.init = init;
