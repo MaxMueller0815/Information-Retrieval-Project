@@ -40,10 +40,43 @@
 		}
 	});
 		_registerOnClickListeners = function () {
+			_regOnCLickAddButton();
+			_regOnCLickTweet();
+		}
+
+		_regOnCLickTweet = function () {
+			$("#docs").on("click", ".one-tweet", function () {
+				var tweet = $(this).html();
+				$(".modal-body").append(
+					"<div class='one-tweet'>" + 
+					tweet +
+					"</div>"
+	                );
+			});
+		}
+
+		_regOnCLickAddButton = function () {
 			$(".one-tweet").on("click", "button.addFav-button", function () {
 				var tweet = $(this).parents(".one-tweet").html();
-				$(".fav-punkt").append("<div class='one-tweet col-sm-9'>" + tweet + "</div>");
-			});
+				$(".fav-punkt").append(
+					"<div class='one-fav-punkt'>"+
+						"<div class='one-tweet col-sm-9'>" + tweet + "</div>"+
+						"<div class='term-box col-sm-3'>" + 
+			                  "<p class='terms'>" + document.getElementById("search-field").value + "</p>" +
+		                "</div>"+
+	                "</div>"
+	                );
 
-		};
+				_regOnCLickOnTerms();
+			});
+		}
+
+		_regOnCLickOnTerms = function () {
+			$(".one-fav-punkt").on("click", "div.term-box", function () {
+				var content = $(this).text();
+				document.getElementById('search-field').value = content;
+				$('#search-button').submit();
+			});
+		}
+
 })(jQuery);
