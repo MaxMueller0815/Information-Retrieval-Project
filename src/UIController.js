@@ -37,7 +37,19 @@ SearchEngine.UIController = (function() {
 		$searchTerm.on('click', _handleClickOnTerm);
 
 		_registerExtraListener();
+		_registerPopularSearchTermsClicklistener();
 
+	},
+
+	_registerPopularSearchTermsClicklistener = function () {
+		$("#popular-search-terms").on("click", "li", function () {
+			var content = $(this).text();
+			document.getElementById('search-field').value = content;
+			$buttonSearch.submit();
+
+			// document.forms["Search"].submit();
+
+		});
 	},
 
 	_registerExtraListener = function () {
@@ -54,10 +66,8 @@ SearchEngine.UIController = (function() {
 	},
 
 	_addToFav = function () {
-		console.log("ooi");
 		$(".one-tweet").on("click", "button.addFav-button", function () {
 			var tweet = $(this).parents(".one-tweet").html();
-			console.log("shiiiiiit");
 			$(".fav-punkt").append("<div class='one-tweet col-sm-9'>" + tweet + "</div>");
 
 	        // var sel = $(this).text(),

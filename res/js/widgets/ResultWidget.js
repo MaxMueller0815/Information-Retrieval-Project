@@ -6,6 +6,7 @@
 				var doc = this.manager.response.response.docs[i];
 				$(this.target).append(this.template(doc));
 			}
+			_registerOnClickListeners();
 		},
 
 		template: function (doc) {
@@ -38,4 +39,11 @@
 			return output;
 		}
 	});
+		_registerOnClickListeners = function () {
+			$(".one-tweet").on("click", "button.addFav-button", function () {
+				var tweet = $(this).parents(".one-tweet").html();
+				$(".fav-punkt").append("<div class='one-tweet col-sm-9'>" + tweet + "</div>");
+			});
+
+		};
 })(jQuery);
