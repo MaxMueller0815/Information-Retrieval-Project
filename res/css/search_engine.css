@@ -89,9 +89,7 @@ h2{
 }
 
 #button-show-right{
-	float:right;
 	height: 760px;
-	vertical-align: middle;
 	padding-top:350px;
 }
 
@@ -123,9 +121,6 @@ h2{
 
 #search-again {
 	position: relative;
-	bottom: -350px;
-	right:70px;
-	width: 500px;
 	height:50px;
 }
 
