@@ -24,6 +24,7 @@
   <script src="libs/core/AbstractWidget.js"></script>
   <script src="libs/core/AbstractTextWidget.js"></script>
   <script src="res/js/widgets/ResultWidget.js"></script>
+  <script src="res/js/widgets/ResultWidgetUser.js"></script>
   <script src="res/js/widgets/AutocompleteWidget.js"></script>
   <script src="res/js/QueryBuilder.js"></script>
   <script src="res/js/Twittersearch.js"></script>
@@ -31,10 +32,10 @@
 </head>
 <body>
 
-  <!-- Button trigger modal -->
+  <!-- Button trigger modal
   <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
     Launch demo modal
-  </button>
+  </button> -->
 
   <!-- Modal -->
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -42,13 +43,11 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          <h4 class="modal-title" id="myModalLabel">Detail Ansicht des Tweets</h4>
+          <h4 class="modal-title" id="myModalLabel">Details zum Tweet</h4>
         </div>
         <div class="modal-body">
-          adasd dasdjakjdlajskdj kjlaksdjk ajjd asjdk j
-          dajsjdlsad
-          <br>
-          askdjaskd
+          <div id="modal-content"></div>
+          <div id="modal-loader"></div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Schließen</button>
@@ -85,18 +84,18 @@
   </nav>
 
 
-  <div class=" main-container">
+  <div class="main-container">
     <div class="row">
-      <div class="jumbotron col-sm-2 my-jumbotron">
+      <div class="jumbotron col-sm-2 my-jumbotron left-sidebar">
         <div id="last-search-terms-container">
-          <p>Zuletzt gesucht:</p>
-          <div id="last-search-terms">
+          <h4>Zuletzt gesucht:</h4>
+          <ul id="last-search-terms">
 
-          </div>
+          </ul>
         </div>
 
         <div>
-          Beliebte Suchbegriffe:
+          <h4>Beliebte Suchbegriffe:</h4>
           <ul id="popular-search-terms">
             <li class="col-sm-12"><a href="" data-toggle="tab">Apple</a></li>
             <li class="col-sm-12"><a href="" data-toggle="tab">#Swift</a></li>
@@ -109,241 +108,180 @@
 
       <div class="jumbotron col-sm-4 my-jumbotron">
         <div id="tweet-container" class="col-sm-11">
-
           <div id="docs">
-
-            <div id="8446548515" class="one-tweet col-sm-12">
-              <img class="avatar col-sm-2" src="https://pbs.twimg.com/profile_images/436905227237601280/tRwo8R2E_400x400.png" alt="">
-              <div class="name-container name-container-sm-10">
-               <span class="user-name name-container-content"> Miyamoto Musashi </span>
-               <span class="tweet-date name-container-content"> 18.06.1484 </span>
-               <span class="tweet-time name-container-content"> 09:46:23 </span>
-             </div>
-             <div class="text-container col-sm-10">
-               <span class="text">Huhu das ist ein TEST tweet. Kugg dir das mal an! asjdhah ajshd kjahhaj dhaskjhd khwuhe ha sh fuck this shiaaaat morre of it to fill this container</span> 
-               <a href="http://t.co/LWQcGjaHV7" rel="nofollow" dir="ltr" data-expanded-url="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html" class="twitter-timeline-link" target="_blank" title="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html"><span class="js-display-url">ndr.de/fernsehen/send</span></span>…</span></a>
-             </div>
-             <button type='button' title='Zu Favoriten hinzufügen' class='btn btn-default btn-lg addFav-button'>
-              <span class='glyphicon glyphicon-star-empty'></span>
-            </button>
           </div>
+
         </div>
+
+        <button id="button-show-right" type="button" class="col-sm-1 btn btn-default btn-lg">
+          <span id="arrow-show-right" class="glyphicon glyphicon-chevron-right"></span>
+        </button>
 
       </div>
 
-      <button type="button" class="col-sm-1 btn btn-default btn-lg">
-        <span id="button-show-right" class="glyphicon glyphicon-chevron-right"></span>
-      </button>
+      <div id="options" class=" tab-pane jumbotron col-sm-5 my-jumbotron fade in">
+        <!-- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert-->
+        <div id="content">
+          <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+            <li class="active"><a href="#filter" data-toggle="tab">Erweitert</a></li>
+            <li><a href="#suggestions" data-toggle="tab">Vorschläge</a></li>
+            <li><a href="#previous" data-toggle="tab">Verlauf</a></li>
+            <li><a href="#favorites" data-toggle="tab">Favoriten</a></li>
+          </ul>
+          <div id="my-tab-content" class="tab-content">
 
-    </div>
-
-    <div id="options" class=" tab-pane jumbotron col-sm-5 my-jumbotron fade in">
-      <!-- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert-->
-      <div id="content">
-        <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-          <li class="active"><a href="#filter" data-toggle="tab">Filter</a></li>
-          <li><a href="#suggestions" data-toggle="tab">Vorschläge</a></li>
-          <li><a href="#previous" data-toggle="tab">Verlauf</a></li>
-          <li><a href="#favorites" data-toggle="tab">Favoriten</a></li>
-        </ul>
-        <div id="my-tab-content" class="tab-content">
-
-          <div class="tab-pane active" id="filter">
-            <p id="filter-title">Gewichtung der einzelnen Suchterme</p>
-            <div id="filter-terms">
-              <div class="checkboxes">
-                <label><input id="check-gewichtung-1" type="checkbox" value=""> Hashtags</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-gewichtung-2" type="checkbox" value=""> Personen</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-gewichtung-3" type="checkbox" value=""> Ort</label>
-              </div>
-            </div>
-
-
-          </div>
-          <div class="tab-pane" id="suggestions">
-            <div class="vorschlag col-sm-3">
-              <h2>Hashtags</h2>
-              <div class="checkboxes">
-                <label><input id="check-hashtag-1" type="checkbox" value=""> #Apple</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-hashtag-2" type="checkbox" value=""> #Swift</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-hashtag-3" type="checkbox" value=""> #iOS</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-hashtag-4" type="checkbox" value=""> #OSX1010</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-hashtag-5" type="checkbox" value=""> #beats</label>
-              </div>
-            </div>
-
-            <div class="vorschlag col-sm-3">
-              <h2>Personen</h2>
-              <div class="checkboxes">
-                <label><input id="check-person-1" type="checkbox" value=""> Tim Cook</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-person-2" type="checkbox" value=""> Craig Federighi</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-person-3" type="checkbox" value=""> Steve Jobs</label>
-              </div>
-            </div>
-
-            <div class="vorschlag col-sm-3">
-              <h2>Produkte</h2>
-              <div class="checkboxes">
-                <label><input id="check-produkt-1" type="checkbox" value=""> iWatch</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-produkt-2" type="checkbox" value=""> HealthKit</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-produkt-3" type="checkbox" value=""> iPhone</label>
-              </div>
-            </div>
-
-            <div class="vorschlag col-sm-3">
-              <h2>Land</h2>
-              <div class="checkboxes">
-                <label><input id="check-ort-1" type="checkbox" value=""> Deutschland</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-ort-2" type="checkbox" value=""> USA</label>
-              </div>
-              <div class="checkboxes">
-                <label><input id="check-ort-3" type="checkbox" value=""> Ort C</label>
-              </div>
-            </div>
-
-            <div class="vorschlag col-sm-3">
-              <h2>Eigene</h2>
-              <div class="row">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input id="check-eigen-1" type="checkbox">
-                  </span>
-                  <input type="text" class="form-control">
-                </div><!-- /input-group -->
-              </div><!-- /.row -->
-              <div class="row">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input id="check-eigen-2" type="checkbox">
-                  </span>
-                  <input type="text" class="form-control">
-                </div><!-- /input-group -->
-              </div><!-- /.row -->
-              <div class="row">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input id="check-eigen-3" type="checkbox">
-                  </span>
-                  <input type="text" class="form-control">
-                </div><!-- /input-group -->
-              </div><!-- /.row -->
-              <div class="row">
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <input id="check-eigen-4" type="checkbox">
-                  </span>
-                  <input type="text" class="form-control">
-                </div><!-- /input-group -->
-              </div><!-- /.row -->
-            </div>
-
-            <button id="search-again" type="button" class="btn btn-info col-sm-12">Search Again!</button>
-
-          </div>
-
-          <div class="tab-pane" id="previous">
-            <h3>Hier befindet sich der Verlauf deiner angeschauten Tweets:</h3>
-
-            <div id="verlauf-container" class="col-sm-12">
-              <div id="verlauf">
-                <div class="verlauf-punkt">
-                  <div id="sdasdawdad" class="one-tweet col-sm-9">
-                    <img class="avatar col-sm-2" src="https://pbs.twimg.com/profile_images/436905227237601280/tRwo8R2E_400x400.png" alt="">
-                    <div class="name-container name-container-sm-10">
-                     <span class="user-name name-container-content"> Miyamoto Musashi </span>
-                     <span class="tweet-date name-container-content"> 18.06.1484 </span>
-                     <span class="tweet-time name-container-content"> 09:46:23 </span>
-                   </div>
-                   <div class="text-container col-sm-10">
-                     <span class="text">Huhu das ist ein TEST tweet. Kugg dir das mal an! asjdhah ajshd kjahhaj dhaskjhd khwuhe ha sh fuck this shiaaaat morre of it to fill this container</span> 
-                     <a href="http://t.co/LWQcGjaHV7" rel="nofollow" dir="ltr" data-expanded-url="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html" class="twitter-timeline-link" target="_blank" title="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html"><span class="js-display-url">ndr.de/fernsehen/send</span></span>…</span></a>
-                   </div>
-                   <button type='button' title='Zu Favoriten hinzufügen' class='btn btn-default btn-lg addFav-button'>
-                    <span class='glyphicon glyphicon-star-empty'></span>
-                  </button>
+            <div class="tab-pane active" id="filter">
+              <h3>Erweiterte Suche</h3>
+              <div id="filter-terms">
+                <div class="checkboxes">
+                  <label><input id="check-gewichtung-1" type="checkbox" value=""> Hashtags</label>
                 </div>
-                <div class="term-box col-sm-3">
-                  <p>Verwendete Begriffe:</p>
-                  #iOS Bobtown
+                <div class="checkboxes">
+                  <label><input id="check-gewichtung-2" type="checkbox" value=""> Personen</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-gewichtung-3" type="checkbox" value=""> Ort</label>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="tab-pane" id="suggestions">
+              <div class="vorschlag col-sm-3">
+                <h3>Hashtags</h3>
+                <div class="checkboxes">
+                  <label><input id="check-hashtag-1" type="checkbox" value=""> #Apple</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-hashtag-2" type="checkbox" value=""> #Swift</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-hashtag-3" type="checkbox" value=""> #iOS</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-hashtag-4" type="checkbox" value=""> #OSX1010</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-hashtag-5" type="checkbox" value=""> #beats</label>
+                </div>
+              </div>
+
+              <div class="vorschlag col-sm-3">
+                <h3>Personen</h3>
+                <div class="checkboxes">
+                  <label><input id="check-person-1" type="checkbox" value=""> Tim Cook</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-person-2" type="checkbox" value=""> Craig Federighi</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-person-3" type="checkbox" value=""> Steve Jobs</label>
+                </div>
+              </div>
+
+              <div class="vorschlag col-sm-3">
+                <h3>Produkte</h3>
+                <div class="checkboxes">
+                  <label><input id="check-produkt-1" type="checkbox" value=""> iWatch</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-produkt-2" type="checkbox" value=""> HealthKit</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-produkt-3" type="checkbox" value=""> iPhone</label>
+                </div>
+              </div>
+
+              <div class="vorschlag col-sm-3">
+                <h3>Land</h3>
+                <div class="checkboxes">
+                  <label><input id="check-ort-1" type="checkbox" value=""> Deutschland</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-ort-2" type="checkbox" value=""> USA</label>
+                </div>
+                <div class="checkboxes">
+                  <label><input id="check-ort-3" type="checkbox" value=""> Ort C</label>
+                </div>
+              </div>
+
+              <div class="vorschlag col-sm-3">
+                <h3>Eigene</h3>
+                <div class="row">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <input id="check-eigen-1" type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                  </div><!-- /input-group -->
+                </div><!-- /.row -->
+                <div class="row">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <input id="check-eigen-2" type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                  </div><!-- /input-group -->
+                </div><!-- /.row -->
+                <div class="row">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <input id="check-eigen-3" type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                  </div><!-- /input-group -->
+                </div><!-- /.row -->
+                <div class="row">
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <input id="check-eigen-4" type="checkbox">
+                    </span>
+                    <input type="text" class="form-control">
+                  </div><!-- /input-group -->
+                </div><!-- /.row -->
+              </div>
+
+              <button id="search-again" type="button" class="btn btn-info col-sm-12">Search Again!</button>
+
+            </div>
+
+            <div class="tab-pane" id="previous">
+              <h3>Hier befindet sich der Verlauf deiner angeschauten Tweets:</h3>
+
+              <div id="verlauf-container" class="col-sm-12">
+                <div id="verlauf">
+                  <div class="verlauf-punkt">
                 </div>
               </div>
             </div>
-            
           </div>
-        </div>
-        <div class="tab-pane" id="favorites">
-          <h3>Hier sind deine favorisierten Tweets aufgelistet:</h3>
-
-
-          <div id="fav-container" class="col-sm-12">
-            <div id="fav">
-              <div class="fav-punkt">
-                <div id="sdaasdawdad" class="one-tweet col-sm-9">
-                  <img class="avatar col-sm-2" src="https://pbs.twimg.com/profile_images/436905227237601280/tRwo8R2E_400x400.png" alt="">
-                  <div class="name-container name-container-sm-10">
-                   <span class="user-name name-container-content"> Miyamoto Musashi </span>
-                   <span class="tweet-date name-container-content"> 18.06.1484 </span>
-                   <span class="tweet-time name-container-content"> 09:46:23 </span>
-                 </div>
-                 <div class="text-container col-sm-10">
-                   <span class="text">Huhu das ist ein TEST tweet. Kugg dir das mal an! asjdhah ajshd kjahhaj dhaskjhd khwuhe ha sh fuck this shiaaaat morre of it to fill this container</span> 
-                   <a href="http://t.co/LWQcGjaHV7" rel="nofollow" dir="ltr" data-expanded-url="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html" class="twitter-timeline-link" target="_blank" title="http://www.ndr.de/fernsehen/sendungen/panorama_die_reporter/Gronkh-und-Sarazar-Lets-Play-Together,panorama5290.html"><span class="js-display-url">ndr.de/fernsehen/send</span></span>…</span></a>
-                 </div>
-                 <button type='button' title='Aus Favoriten entfernen' class='btn btn-default btn-lg addFav-button'>
-                  <span class='glyphicon glyphicon-star'></span>
-                </button>
-              </div>
-              <div class="term-box col-sm-3">
-                <p>Verwendete Begriffe:</p>
-                #iOS Bobtown
+          <div class="tab-pane" id="favorites">
+            <h3>Hier sind deine favorisierten Tweets aufgelistet:</h3>
+            <div id="fav-container" class="col-sm-12">
+              <div id="fav">
+                <div class="fav-punkt">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
 
 
-    <script type="text/javascript">
-    jQuery(document).ready(function ($) {
-      $('#tabs').tab();
-    });
-    </script>
+      <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+      });
+      </script>
+      <script src="src/SearchEngine.js"></script>
+      <script src="src/UIController.js"></script>
+      <script src="src/SearchController.js"></script>
+      <script src="src/MainController.js"></script>
+      <script> 
+      $(function(){
+        SearchEngine.init();
+      });
+      </script>   
 
-    <script src="src/SearchEngine.js"></script>
-    <script src="src/UIController.js"></script>
-    <script src="src/SearchController.js"></script>
-    <script src="src/MainController.js"></script>
-
-    
-    <script> 
-    $(function(){
-      SearchEngine.init();
-    });
-    </script>   
-
-  </body>
-  </html>
+    </body>
+    </html>

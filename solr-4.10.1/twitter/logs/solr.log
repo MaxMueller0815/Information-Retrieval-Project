@@ -8156,3 +8156,428 @@ INFO  - 2014-10-29 21:14:54.642; org.apache.solr.core.SolrCore; [collection1] Re
 INFO  - 2014-10-29 21:14:54.642; org.apache.solr.update.processor.LogUpdateProcessor; [collection1] webapp=/solr path=/update params={commit=true} {commit=} 0 1174
 INFO  - 2014-10-29 21:15:08.931; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery1111020728704221358973_1414613707481&wt=json&_=1414613707482} status=0 QTime=10 
 INFO  - 2014-10-29 21:15:10.516; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=&json.wrf=jQuery1111020728704221358973_1414613707481&wt=json&_=1414613707483} status=0 QTime=0 
+INFO  - 2014-10-30 16:45:07.232; org.eclipse.jetty.server.Server; jetty-8.1.10.v20130312
+INFO  - 2014-10-30 16:45:07.248; org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\contexts at interval 0
+INFO  - 2014-10-30 16:45:07.254; org.eclipse.jetty.deploy.DeploymentManager; Deployable added: C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\contexts\solr-jetty-context.xml
+INFO  - 2014-10-30 16:45:09.900; org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+INFO  - 2014-10-30 16:45:09.941; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init()
+INFO  - 2014-10-30 16:45:09.953; org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2014-10-30 16:45:09.953; org.apache.solr.core.SolrResourceLoader; solr home defaulted to 'solr/' (could not find system property or JNDI)
+INFO  - 2014-10-30 16:45:09.954; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/'
+INFO  - 2014-10-30 16:45:10.039; org.apache.solr.core.ConfigSolr; Loading container configuration from C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\solr.xml
+INFO  - 2014-10-30 16:45:10.135; org.apache.solr.core.CoreContainer; New CoreContainer 854487022
+INFO  - 2014-10-30 16:45:10.136; org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=solr/]
+INFO  - 2014-10-30 16:45:10.145; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting socketTimeout to: 0
+INFO  - 2014-10-30 16:45:10.146; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting urlScheme to: 
+INFO  - 2014-10-30 16:45:10.146; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting connTimeout to: 0
+INFO  - 2014-10-30 16:45:10.147; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxConnectionsPerHost to: 20
+INFO  - 2014-10-30 16:45:10.147; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting corePoolSize to: 0
+INFO  - 2014-10-30 16:45:10.149; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maximumPoolSize to: 2147483647
+INFO  - 2014-10-30 16:45:10.149; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting maxThreadIdleTime to: 5
+INFO  - 2014-10-30 16:45:10.149; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting sizeOfQueue to: -1
+INFO  - 2014-10-30 16:45:10.149; org.apache.solr.handler.component.HttpShardHandlerFactory; Setting fairnessPolicy to: false
+INFO  - 2014-10-30 16:45:10.290; org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+INFO  - 2014-10-30 16:45:10.291; org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2014-10-30 16:45:10.292; org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2014-10-30 16:45:10.293; org.apache.solr.core.CoreContainer; Host Name: null
+INFO  - 2014-10-30 16:45:10.383; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/users\'
+INFO  - 2014-10-30 16:45:10.383; org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: 'solr/tweets\'
+INFO  - 2014-10-30 16:45:10.419; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.1
+INFO  - 2014-10-30 16:45:10.421; org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 4.10.1
+INFO  - 2014-10-30 16:45:10.490; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-30 16:45:10.491; org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2014-10-30 16:45:10.497; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-30 16:45:10.497; org.apache.solr.schema.IndexSchema; Reading Solr Schema from schema.xml
+INFO  - 2014-10-30 16:45:10.509; org.apache.solr.schema.IndexSchema; [collection1] Schema name=tweets
+INFO  - 2014-10-30 16:45:10.518; org.apache.solr.schema.IndexSchema; [collection2] Schema name=tweets
+INFO  - 2014-10-30 16:45:10.561; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-30 16:45:10.567; org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2014-10-30 16:45:10.627; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection2' using configuration from instancedir solr/users\
+INFO  - 2014-10-30 16:45:10.627; org.apache.solr.core.CoreContainer; Creating SolrCore 'collection1' using configuration from instancedir solr/tweets\
+INFO  - 2014-10-30 16:45:10.641; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-30 16:45:10.641; org.apache.solr.core.SolrCore; solr.StandardDirectoryFactory
+INFO  - 2014-10-30 16:45:10.647; org.apache.solr.core.SolrCore; [collection1] Opening new SolrCore at solr/tweets\, dataDir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\data\
+INFO  - 2014-10-30 16:45:10.647; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection1
+INFO  - 2014-10-30 16:45:10.647; org.apache.solr.core.SolrCore; [collection2] Opening new SolrCore at solr/users\, dataDir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\data\
+INFO  - 2014-10-30 16:45:10.648; org.apache.solr.core.SolrCore; JMX monitoring not detected for core: collection2
+INFO  - 2014-10-30 16:45:10.655; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\data
+INFO  - 2014-10-30 16:45:10.655; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\data
+INFO  - 2014-10-30 16:45:10.658; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\data\index/
+INFO  - 2014-10-30 16:45:10.658; org.apache.solr.core.SolrCore; New index directory detected: old=null new=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\data\index/
+INFO  - 2014-10-30 16:45:10.659; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\data\index
+INFO  - 2014-10-30 16:45:10.659; org.apache.solr.core.CachingDirectoryFactory; return new directory for C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\data\index
+INFO  - 2014-10-30 16:45:10.711; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-30 16:45:10.712; org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2014-10-30 16:45:10.720; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.720; org.apache.solr.core.RequestHandlers; created /update: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.721; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.721; org.apache.solr.core.RequestHandlers; created /update/json: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.721; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.721; org.apache.solr.core.RequestHandlers; created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.722; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.723; org.apache.solr.core.RequestHandlers; created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.725; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-10-30 16:45:10.725; org.apache.solr.core.RequestHandlers; created /get: solr.RealTimeGetHandler
+INFO  - 2014-10-30 16:45:10.726; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.ReplicationHandler
+INFO  - 2014-10-30 16:45:10.726; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.ReplicationHandler
+INFO  - 2014-10-30 16:45:10.726; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-10-30 16:45:10.726; org.apache.solr.core.RequestHandlers; created /replication: solr.ReplicationHandler
+INFO  - 2014-10-30 16:45:10.728; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-30 16:45:10.728; org.apache.solr.core.RequestHandlers; created standard: solr.StandardRequestHandler
+INFO  - 2014-10-30 16:45:10.728; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-10-30 16:45:10.729; org.apache.solr.core.RequestHandlers; adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+INFO  - 2014-10-30 16:45:10.729; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+INFO  - 2014-10-30 16:45:10.729; org.apache.solr.core.RequestHandlers; created /analysis/field: solr.FieldAnalysisRequestHandler
+WARN  - 2014-10-30 16:45:10.731; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+WARN  - 2014-10-30 16:45:10.731; org.apache.solr.core.RequestHandlers; Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.731; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.732; org.apache.solr.core.RequestHandlers; created /update: solr.UpdateRequestHandler
+INFO  - 2014-10-30 16:45:10.732; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-30 16:45:10.732; org.apache.solr.core.RequestHandlers; created /admin/: org.apache.solr.handler.admin.AdminHandlers
+INFO  - 2014-10-30 16:45:10.736; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-30 16:45:10.736; org.apache.solr.core.RequestHandlers; created /admin/ping: solr.PingRequestHandler
+INFO  - 2014-10-30 16:45:10.736; org.apache.solr.core.RequestHandlers; created /suggest: org.apache.solr.handler.component.SearchHandler
+INFO  - 2014-10-30 16:45:10.747; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.747; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.749; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.749; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.750; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.750; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.750; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.751; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.751; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.752; org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2014-10-30 16:45:10.770; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-30 16:45:10.770; org.apache.solr.update.CommitTracker; Hard AutoCommit: disabled
+INFO  - 2014-10-30 16:45:10.771; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-30 16:45:10.771; org.apache.solr.update.CommitTracker; Soft AutoCommit: disabled
+INFO  - 2014-10-30 16:45:10.840; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\data\index,segFN=segments_2,generation=2}
+INFO  - 2014-10-30 16:45:10.841; org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\data\index,segFN=segments_4,generation=4}
+INFO  - 2014-10-30 16:45:10.841; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2014-10-30 16:45:10.841; org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 4
+INFO  - 2014-10-30 16:45:10.863; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4b9a916[collection2] main
+INFO  - 2014-10-30 16:45:10.868; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\conf
+INFO  - 2014-10-30 16:45:10.868; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\conf}
+INFO  - 2014-10-30 16:45:10.875; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\conf
+INFO  - 2014-10-30 16:45:10.878; org.apache.solr.search.SolrIndexSearcher; Opening Searcher@45474abc[collection1] main
+INFO  - 2014-10-30 16:45:10.879; org.apache.solr.rest.ManagedResourceStorage$FileStorageIO; File-based storage initialized to use dir: C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf
+INFO  - 2014-10-30 16:45:10.880; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\users\conf
+INFO  - 2014-10-30 16:45:10.880; org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {storageDir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf}
+INFO  - 2014-10-30 16:45:10.880; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2014-10-30 16:45:10.881; org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using file:dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf
+INFO  - 2014-10-30 16:45:10.882; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-30 16:45:10.882; org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using file:dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf
+INFO  - 2014-10-30 16:45:10.884; org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2014-10-30 16:45:10.884; org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2014-10-30 16:45:10.884; org.apache.solr.handler.component.SpellCheckComponent; Initializing spell checkers
+INFO  - 2014-10-30 16:45:10.887; org.apache.solr.spelling.suggest.Suggester; init: {name=suggest,classname=org.apache.solr.spelling.suggest.Suggester,lookupImpl=org.apache.solr.spelling.suggest.tst.TSTLookupFactory,field=content,threshold=0.005,buildOnCommit=true}
+INFO  - 2014-10-30 16:45:10.890; org.apache.solr.handler.component.SpellCheckComponent; Registering newSearcher listener for spellchecker: suggest
+INFO  - 2014-10-30 16:45:10.891; org.apache.solr.handler.component.SpellCheckComponent; No queryConverter defined, using default converter
+INFO  - 2014-10-30 16:45:10.893; org.apache.solr.core.SolrCore; [collection2] Registered new searcher Searcher@4b9a916[collection2] main{StandardDirectoryReader(segments_2:3:nrt _0(4.10.1):C31050)}
+INFO  - 2014-10-30 16:45:10.893; org.apache.solr.core.CoreContainer; registering core: collection2
+INFO  - 2014-10-30 16:45:10.893; org.apache.solr.core.CoreContainer; registering core: collection1
+INFO  - 2014-10-30 16:45:10.893; org.apache.solr.core.SolrCore; [collection1] Registered new searcher Searcher@45474abc[collection1] main{StandardDirectoryReader(segments_4:7:nrt _0(4.10.1):C102892 _1(4.10.1):C96390 _2(4.10.1):C98155)}
+INFO  - 2014-10-30 16:45:10.895; org.apache.solr.servlet.SolrDispatchFilter; user.dir=C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter
+INFO  - 2014-10-30 16:45:10.895; org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2014-10-30 16:45:10.913; org.eclipse.jetty.server.AbstractConnector; Started SocketConnector@0.0.0.0:8983
+INFO  - 2014-10-30 16:45:12.272; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:#Swift&json.wrf=jQuery111108389649399730956_1414683838030&wt=json&_=1414683838031} hits=2083 status=0 QTime=39 
+INFO  - 2014-10-30 16:49:09.876; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:#Swift&json.wrf=jQuery11110938767523758157_1414684148772&wt=json&_=1414684148773} hits=2083 status=0 QTime=2 
+INFO  - 2014-10-30 16:50:14.486; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:#Swift&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213411} hits=2083 status=0 QTime=1 
+INFO  - 2014-10-30 16:50:20.594; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213412} status=0 QTime=13 
+INFO  - 2014-10-30 16:50:20.687; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213413} status=0 QTime=0 
+INFO  - 2014-10-30 16:50:20.801; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwd&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213414} status=0 QTime=0 
+INFO  - 2014-10-30 16:50:20.971; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213415} status=0 QTime=0 
+INFO  - 2014-10-30 16:50:21.987; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery11110533746087377171_1414684213410&wt=json&_=1414684213416} hits=11087 status=0 QTime=20 
+INFO  - 2014-10-30 16:50:41.918; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery1111027734736498180146_1414684241189&wt=json&_=1414684241190} hits=11087 status=0 QTime=1 
+INFO  - 2014-10-30 16:51:52.617; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery111109430348702083885_1414684311132&wt=json&_=1414684311133} hits=11087 status=0 QTime=2 
+INFO  - 2014-10-30 17:02:15.861; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery1111007083823548713308_1414684931476&wt=json&_=1414684931477} hits=11087 status=0 QTime=3 
+INFO  - 2014-10-30 17:03:24.134; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery11110616286944254903_1414685002342&wt=json&_=1414685002343} hits=11087 status=0 QTime=2 
+INFO  - 2014-10-30 17:07:49.103; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc&json.wrf=jQuery111109859141215628939_1414685267110&wt=json&_=1414685267111} hits=11087 status=0 QTime=1 
+INFO  - 2014-10-30 17:32:09.467; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111103904073116923348_1414686727778&wt=json&_=1414686727779} status=0 QTime=1 
+INFO  - 2014-10-30 17:32:09.634; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111103904073116923348_1414686727778&wt=json&_=1414686727780} status=0 QTime=1 
+INFO  - 2014-10-30 17:32:48.174; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111109786326229550198_1414686766821&wt=json&_=1414686766822} status=0 QTime=0 
+INFO  - 2014-10-30 17:32:48.529; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111109786326229550198_1414686766821&wt=json&_=1414686766823} status=0 QTime=0 
+INFO  - 2014-10-30 17:33:16.799; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery1111016043023567858317_1414686795006&wt=json&_=1414686795007} status=0 QTime=1 
+INFO  - 2014-10-30 17:33:16.932; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery1111016043023567858317_1414686795006&wt=json&_=1414686795008} status=0 QTime=0 
+INFO  - 2014-10-30 17:33:43.879; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery11110108310046227309_1414686822466&wt=json&_=1414686822467} status=0 QTime=0 
+INFO  - 2014-10-30 17:33:44.031; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery11110108310046227309_1414686822466&wt=json&_=1414686822468} status=0 QTime=1 
+INFO  - 2014-10-30 17:33:44.240; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110108310046227309_1414686822466&wt=json&_=1414686822469} hits=41 status=0 QTime=5 
+INFO  - 2014-10-30 17:33:56.951; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102351482447928407_1414686835291&wt=json&_=1414686835292} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:34:06.874; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111006599498449433416_1414686846088&wt=json&_=1414686846089} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 17:43:38.829; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111103987283792621312_1414687415372&wt=json&_=1414687415373} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:51:43.640; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104495628518897127_1414687901819&wt=json&_=1414687901820} hits=41 status=0 QTime=2 
+INFO  - 2014-10-30 17:52:41.937; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111028799516678161086_1414687960702&wt=json&_=1414687960703} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:52:54.933; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104844462191160023_1414687973738&wt=json&_=1414687973739} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:54:00.633; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111109600932128626843_1414688039427&wt=json&_=1414688039428} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 17:54:44.150; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105659666292287263_1414688083010&wt=json&_=1414688083011} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:56:01.075; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102198462415750716_1414688160190&wt=json&_=1414688160191} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:56:36.797; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111100918265098508716_1414688196006&wt=json&_=1414688196007} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 17:57:04.136; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111026879384532665407_1414688222360&wt=json&_=1414688222361} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 17:57:55.655; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111024740413025769104_1414688273727&wt=json&_=1414688273728} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:01:08.372; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107012507795210545_1414688465697&wt=json&_=1414688465698} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:02:29.042; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111016983616569614346_1414688546984&wt=json&_=1414688546985} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:02:52.027; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105941442048149567_1414688570247&wt=json&_=1414688570248} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:04:01.561; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110835925023510321_1414688640077&wt=json&_=1414688640078} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:04:25.963; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111103736263803976031_1414688664995&wt=json&_=1414688664996} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:04:49.680; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111019985247153881414_1414688688153&wt=json&_=1414688688154} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:05:10.758; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111109005357510569523_1414688710041&wt=json&_=1414688710042} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:07:04.027; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102216959334600117_1414688820820&wt=json&_=1414688820821} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:07:34.406; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107100826835124405_1414688853586&wt=json&_=1414688853587} hits=41 status=0 QTime=2 
+INFO  - 2014-10-30 18:08:19.226; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111107100826835124405_1414688853586&wt=json&_=1414688853588} status=0 QTime=0 
+INFO  - 2014-10-30 18:08:19.320; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=&json.wrf=jQuery111107100826835124405_1414688853586&wt=json&_=1414688853589} status=0 QTime=0 
+ERROR - 2014-10-30 18:09:30.383; org.apache.solr.common.SolrException; org.apache.solr.common.SolrException: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    <NUMBER> ...
+    
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:205)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.solr.search.SyntaxError: Cannot parse 'content:': Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:155)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:148)
+	... 31 more
+Caused by: org.apache.solr.parser.ParseException: Encountered "<EOF>" at line 1, column 8.
+Was expecting one of:
+    <BAREOPER> ...
+    "(" ...
+    "*" ...
+    <QUOTED> ...
+    <TERM> ...
+    <PREFIXTERM> ...
+    <WILDTERM> ...
+    <REGEXPTERM> ...
+    "[" ...
+    "{" ...
+    <LPARAMS> ...
+    <NUMBER> ...
+    
+	at org.apache.solr.parser.QueryParser.generateParseException(QueryParser.java:649)
+	at org.apache.solr.parser.QueryParser.jj_consume_token(QueryParser.java:531)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:216)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:107)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:151)
+	... 34 more
+
+INFO  - 2014-10-30 18:09:30.384; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:&json.wrf=jQuery111104390009937665518_1414688965287&wt=json&_=1414688965288} status=400 QTime=6 
+INFO  - 2014-10-30 18:09:31.082; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111104390009937665518_1414688965289&wt=json&_=1414688965290} status=0 QTime=1 
+INFO  - 2014-10-30 18:09:31.234; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111104390009937665518_1414688965289&wt=json&_=1414688965291} status=0 QTime=0 
+INFO  - 2014-10-30 18:09:32.058; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104390009937665518_1414688965289&wt=json&_=1414688965292} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:13:31.128; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106808973496257698_1414689209488&wt=json&_=1414689209489} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:13:53.703; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102608507985611117_1414689232574&wt=json&_=1414689232575} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:15:22.667; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111033338455259564104_1414689320382&wt=json&_=1414689320383} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:17:08.641; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111028936046103258395_1414689427796&wt=json&_=1414689427797} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:18:36.316; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110695060353621448_1414689515238&wt=json&_=1414689515239} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:22:49.866; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111109028000930525091_1414689768785&wt=json&_=1414689768786} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:23:14.878; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111013237798575824478_1414689792561&wt=json&_=1414689792562} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 18:23:28.394; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111101369265372956897_1414689805366&wt=json&_=1414689805367} status=0 QTime=1 
+INFO  - 2014-10-30 18:23:28.540; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111101369265372956897_1414689805366&wt=json&_=1414689805368} status=0 QTime=1 
+INFO  - 2014-10-30 18:23:28.735; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111101369265372956897_1414689805366&wt=json&_=1414689805369} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:23:53.432; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111104463317514871836_1414689817932&wt=json&_=1414689817933} status=0 QTime=1 
+INFO  - 2014-10-30 18:23:53.515; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111104463317514871836_1414689817932&wt=json&_=1414689817934} status=0 QTime=1 
+INFO  - 2014-10-30 18:23:54.241; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111104463317514871836_1414689817932&wt=json&_=1414689817935} status=0 QTime=0 
+INFO  - 2014-10-30 18:23:54.634; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104463317514871836_1414689817932&wt=json&_=1414689817936} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:24:58.225; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110409260447137779_1414689897424&wt=json&_=1414689897425} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:25:52.749; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107047339585076172_1414689951506&wt=json&_=1414689951507} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:52:31.098; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111041789892097000836_1414691550281&wt=json&_=1414691550282} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:54:11.789; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111039422309673310707_1414691650683&wt=json&_=1414691650684} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 18:54:46.143; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105278167772350292_1414691683807&wt=json&_=1414691683808} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 19:01:07.939; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111103966744755445364_1414692066745&wt=json&_=1414692066746} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:04:12.601; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102930213418598471_1414692251046&wt=json&_=1414692251047} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:04:40.452; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111009116168279729608_1414692279079&wt=json&_=1414692279080} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:15:41.786; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111012583393676531962_1414692940266&wt=json&_=1414692940267} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:16:03.970; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111001422511294351203_1414692960126&wt=json&_=1414692960127} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:16:42.513; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110108130078604735_1414693001412&wt=json&_=1414693001413} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:18:22.389; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111103902916842884203_1414693100928&wt=json&_=1414693100929} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:18:45.760; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111022747484628979842_1414693124893&wt=json&_=1414693124894} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:20:48.970; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247955} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:20:59.977; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247956} status=0 QTime=1 
+INFO  - 2014-10-30 19:21:00.127; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wa&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247957} status=0 QTime=0 
+INFO  - 2014-10-30 19:21:01.027; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=a&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247958} status=0 QTime=1 
+INFO  - 2014-10-30 19:21:02.046; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:a&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247959} hits=9541 status=0 QTime=12 
+INFO  - 2014-10-30 19:21:03.111; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247960} status=0 QTime=0 
+INFO  - 2014-10-30 19:21:03.463; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247961} status=0 QTime=0 
+INFO  - 2014-10-30 19:21:03.968; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247962} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 19:21:53.368; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:,&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247963} hits=0 status=0 QTime=3 
+INFO  - 2014-10-30 19:22:08.016; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=hashtag:,&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247964} hits=0 status=0 QTime=4 
+INFO  - 2014-10-30 19:22:11.451; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=hashtag:,&json.wrf=jQuery111100012517859254235209_1414693247954&wt=json&_=1414693247965} hits=0 status=0 QTime=0 
+INFO  - 2014-10-30 19:30:52.314; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102702921187654552_1414693850404&wt=json&_=1414693850405} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:32:46.609; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104651163953829328_1414693965188&wt=json&_=1414693965189} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:33:27.184; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106040452206605867_1414694003873&wt=json&_=1414694003874} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 19:37:28.584; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106166744250314182_1414694247121&wt=json&_=1414694247122} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:37:58.897; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111008443923496550698_1414694277516&wt=json&_=1414694277517} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:38:19.807; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108846072636606234_1414694298354&wt=json&_=1414694298355} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:38:55.049; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107134659412088652_1414694333784&wt=json&_=1414694333785} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 19:42:18.928; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105084136895844111_1414694536976&wt=json&_=1414694536977} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 19:44:00.780; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108573349029377368_1414694639179&wt=json&_=1414694639180} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:04:23.187; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111107123188825467394_1414703059865&wt=json&_=1414703059866} status=0 QTime=1 
+INFO  - 2014-10-30 22:04:23.340; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111107123188825467394_1414703059865&wt=json&_=1414703059867} status=0 QTime=0 
+INFO  - 2014-10-30 22:04:23.703; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107123188825467394_1414703059865&wt=json&_=1414703059868} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:05:04.163; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105986172739814193_1414703103258&wt=json&_=1414703103259} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:05:14.462; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106089172408084474_1414703113632&wt=json&_=1414703113633} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:13:55.583; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery1111023353400163637805_1414703632994&wt=json&_=1414703632995} status=0 QTime=0 
+INFO  - 2014-10-30 22:13:55.745; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery1111023353400163637805_1414703632994&wt=json&_=1414703632996} status=0 QTime=0 
+INFO  - 2014-10-30 22:13:58.301; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111023353400163637805_1414703632994&wt=json&_=1414703632997} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:23:08.922; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111104467314372230443_1414704186563&wt=json&_=1414704186564} status=0 QTime=1 
+INFO  - 2014-10-30 22:23:09.061; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111104467314372230443_1414704186563&wt=json&_=1414704186565} status=0 QTime=0 
+INFO  - 2014-10-30 22:27:40.852; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery11110537102010163807_1414704458973&wt=json&_=1414704458974} status=0 QTime=1 
+INFO  - 2014-10-30 22:27:41.015; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery11110537102010163807_1414704458973&wt=json&_=1414704458975} status=0 QTime=0 
+INFO  - 2014-10-30 22:27:41.503; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110537102010163807_1414704458973&wt=json&_=1414704458976} hits=41 status=0 QTime=2 
+INFO  - 2014-10-30 22:29:04.969; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111109121264702131399_1414704543614&wt=json&_=1414704543615} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:29:42.246; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110847361054212082_1414704580776&wt=json&_=1414704580777} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:33:14.026; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104999558704314685_1414704792835&wt=json&_=1414704792836} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:33:28.798; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104999558704314685_1414704792835&wt=json&_=1414704792837} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:34:24.490; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106084840324228965_1414704863263&wt=json&_=1414704863264} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:34:57.982; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104495510657174526_1414704896659&wt=json&_=1414704896660} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 22:44:30.623; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110341270702165691_1414705468521&wt=json&_=1414705468522} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:44:36.281; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110341270702165691_1414705468521&wt=json&_=1414705468523} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:45:06.908; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107411782048913406_1414705505129&wt=json&_=1414705505130} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 22:46:47.404; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110736183625961866_1414705605689&wt=json&_=1414705605690} hits=41 status=0 QTime=1 
+INFO  - 2014-10-30 23:57:45.796; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111107170219734621703_1414709864270&wt=json&_=1414709864271} status=0 QTime=1 
+INFO  - 2014-10-30 23:57:46.013; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111107170219734621703_1414709864270&wt=json&_=1414709864272} status=0 QTime=0 
+INFO  - 2014-10-30 23:57:46.613; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107170219734621703_1414709864270&wt=json&_=1414709864273} hits=41 status=0 QTime=2 
+INFO  - 2014-10-30 23:58:53.996; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104392778078634084_1414709932932&wt=json&_=1414709932933} hits=41 status=0 QTime=0 
+INFO  - 2014-10-30 23:59:07.099; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111033802194627074467_1414709946038&wt=json&_=1414709946039} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:00:09.317; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102108524189504043_1414710007498&wt=json&_=1414710007499} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:01:19.107; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105126217029014842_1414710078256&wt=json&_=1414710078257} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:02:26.172; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105375999102178278_1414710145500&wt=json&_=1414710145501} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:02:48.902; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111101451109986839102_1414710167914&wt=json&_=1414710167915} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:03:33.604; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107278079444382121_1414710212851&wt=json&_=1414710212852} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:10:24.168; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104280845118804333_1414710623302&wt=json&_=1414710623303} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:10:47.957; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111107793722419350329_1414710646864&wt=json&_=1414710646865} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:11:26.935; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111102717873689166894_1414710685884&wt=json&_=1414710685885} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:12:18.952; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111009620995108582131_1414710737805&wt=json&_=1414710737806} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:15:52.531; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1414710952522} status=0 QTime=2 
+INFO  - 2014-10-31 00:15:52.554; org.apache.solr.servlet.SolrDispatchFilter; [admin] webapp=null path=/admin/info/system params={wt=json&_=1414710952545} status=0 QTime=3 
+ERROR - 2014-10-31 00:15:54.976; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.menu-top.html [C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf\admin-extra.menu-top.html]
+ERROR - 2014-10-31 00:15:54.976; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.menu-bottom.html [C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf\admin-extra.menu-bottom.html]
+INFO  - 2014-10-31 00:15:54.977; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1414710954973} status=404 QTime=0 
+INFO  - 2014-10-31 00:15:54.977; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1414710954971} status=404 QTime=1 
+ERROR - 2014-10-31 00:15:55.021; org.apache.solr.handler.admin.ShowFileRequestHandler; Can not find: admin-extra.html [C:\Users\Andi\Documents\InfRetrieval\solr-4.10.1\twitter\solr\tweets\conf\admin-extra.html]
+INFO  - 2014-10-31 00:15:55.023; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1414710955005} status=404 QTime=3 
+INFO  - 2014-10-31 00:15:55.022; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1414710954997} status=0 QTime=4 
+INFO  - 2014-10-31 00:15:55.022; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/system params={wt=json&_=1414710955003} status=0 QTime=4 
+INFO  - 2014-10-31 00:15:55.026; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1414710955006} status=503 QTime=1 
+INFO  - 2014-10-31 00:15:55.032; org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2014-10-31 00:15:55.037; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/replication params={wt=json&command=details&_=1414710955002} status=0 QTime=18 
+INFO  - 2014-10-31 00:16:07.629; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:5&indent=true&wt=json&_=1414710967605} hits=0 status=0 QTime=7 
+INFO  - 2014-10-31 00:16:11.188; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:1&indent=true&wt=json&_=1414710971186} hits=0 status=0 QTime=0 
+INFO  - 2014-10-31 00:16:13.498; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:0&indent=true&wt=json&_=1414710973482} hits=297437 status=0 QTime=14 
+INFO  - 2014-10-31 00:16:16.773; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:2&indent=true&wt=json&_=1414710976763} hits=0 status=0 QTime=0 
+INFO  - 2014-10-31 00:16:19.810; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:1&indent=true&wt=json&_=1414710979807} hits=0 status=0 QTime=0 
+INFO  - 2014-10-31 00:16:22.154; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:3&indent=true&wt=json&_=1414710982147} hits=0 status=0 QTime=1 
+INFO  - 2014-10-31 00:16:24.323; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:4&indent=true&wt=json&_=1414710984321} hits=0 status=0 QTime=0 
+INFO  - 2014-10-31 00:16:27.045; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweeted:14&indent=true&wt=json&_=1414710987042} hits=0 status=0 QTime=1 
+INFO  - 2014-10-31 00:16:32.078; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweet:3&indent=true&wt=json&_=1414710992072} hits=0 status=0 QTime=0 
+INFO  - 2014-10-31 00:16:35.080; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=retweet:1&indent=true&wt=json&_=1414710995071} hits=29566 status=0 QTime=6 
+INFO  - 2014-10-31 00:17:40.401; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111013195588491600152_1414711059530&wt=json&_=1414711059531} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:18:08.991; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108517213362252598_1414711084587&wt=json&_=1414711084588} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:19:43.781; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106194001550021989_1414711182807&wt=json&_=1414711182808} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:20:33.305; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106419788740031371_1414711231484&wt=json&_=1414711231485} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:24:13.178; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111016195199845933628_1414711452217&wt=json&_=1414711452218} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:25:28.240; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111064415695725936_1414711527250&wt=json&_=1414711527251} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:26:34.746; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111109104161955850062_1414711591734&wt=json&_=1414711591735} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:26:50.635; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111049209938316339175_1414711608793&wt=json&_=1414711608794} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:28:21.534; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery1111036703483948363747_1414711698598&wt=json&_=1414711698599} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:28:50.377; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108237654711351148_1414711729307&wt=json&_=1414711729308} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:31:07.464; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105866729527665572_1414711866136&wt=json&_=1414711866137} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:31:25.464; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery11110984743926543098_1414711884849&wt=json&_=1414711884850} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:31:41.913; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104529948791965228_1414711900038&wt=json&_=1414711900039} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:31:42.150; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111104529948791965228_1414711900038&wt=json&_=1414711900040} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:32:25.849; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108927694996395911_1414711943576&wt=json&_=1414711943577} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:32:44.683; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111106647163566755956_1414711963833&wt=json&_=1414711963834} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:33:05.576; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111105574403399824347_1414711983362&wt=json&_=1414711983363} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:33:17.564; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996236} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:33:29.501; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996237} hits=41 status=0 QTime=1 
+INFO  - 2014-10-31 00:33:30.797; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:ww&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996238} hits=41 status=0 QTime=0 
+INFO  - 2014-10-31 00:33:32.988; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=h&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996239} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:33.044; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=hu&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996240} status=0 QTime=1 
+INFO  - 2014-10-31 00:33:33.110; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=huw&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996241} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:33.277; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:huw&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996242} hits=0 status=0 QTime=8 
+INFO  - 2014-10-31 00:33:33.681; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=hu&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996243} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:33.983; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=hue&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996244} status=0 QTime=1 
+INFO  - 2014-10-31 00:33:34.173; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:hue&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996245} hits=36 status=0 QTime=6 
+INFO  - 2014-10-31 00:33:42.003; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=hu&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996246} status=0 QTime=1 
+INFO  - 2014-10-31 00:33:42.186; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=h&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996247} status=0 QTime=1 
+INFO  - 2014-10-31 00:33:42.380; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996248} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:43.128; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=b&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996249} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:43.214; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=be&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996250} status=0 QTime=1 
+INFO  - 2014-10-31 00:33:43.364; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=bee&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996251} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:43.471; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=beer&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996252} status=0 QTime=0 
+INFO  - 2014-10-31 00:33:43.568; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111108993727899318769_1414711996235&wt=json&_=1414711996253} hits=19 status=0 QTime=10 
+INFO  - 2014-10-31 00:35:54.294; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111106413270638776722_1414712153331&wt=json&_=1414712153332} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:36:06.110; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111038373412278353025_1414712164977&wt=json&_=1414712164978} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:36:06.971; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111038373412278353025_1414712164977&wt=json&_=1414712164979} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:36:43.186; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111018145162502608203_1414712202299&wt=json&_=1414712202300} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:37:03.965; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111102651242542152844_1414712222842&wt=json&_=1414712222843} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:37:18.486; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111019553191599400355_1414712237508&wt=json&_=1414712237509} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:37:50.759; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111025006681368428096_1414712269789&wt=json&_=1414712269790} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:42:16.348; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111108167278575170447_1414712535157&wt=json&_=1414712535158} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:42:35.600; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111101255204857774913_1414712551710&wt=json&_=1414712551711} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:43:42.912; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111003632123732529602_1414712622027&wt=json&_=1414712622028} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:48:06.820; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111106927159283222686_1414712886072&wt=json&_=1414712886073} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:48:08.599; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111106927159283222686_1414712886072&wt=json&_=1414712886074} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:48:36.199; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111102555397441030671_1414712915039&wt=json&_=1414712915040} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:49:04.387; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111026528406255501025_1414712942789&wt=json&_=1414712942790} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:50:06.199; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery111105193461520549306_1414713005092&wt=json&_=1414713005093} hits=19 status=0 QTime=0 
+INFO  - 2014-10-31 00:50:21.418; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery11110681427103107232_1414713020229&wt=json&_=1414713020230} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:51:23.389; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111012169393488107427_1414713082224&wt=json&_=1414713082225} hits=19 status=0 QTime=1 
+INFO  - 2014-10-31 00:55:31.268; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:beer&json.wrf=jQuery1111044942433584221964_1414713328364&wt=json&_=1414713328365} hits=19 status=0 QTime=1 

@@ -54,31 +54,11 @@ SearchEngine.UIController = (function() {
 
 	_registerExtraListener = function () {
 		$buttonSearch.on('click', _handleClickOnSearch);
-		_addToFav();
 		_openTweetAndAddToVerlauf();
-		
 	},
 
 	_handleClickOnSearch = function () {
 		document.getElementById("search-button").onclick = null;
-		console.log("fucking button was clicked");
-		_addToFav();
-	},
-
-	_addToFav = function () {
-		$(".one-tweet").on("click", "button.addFav-button", function () {
-			var tweet = $(this).parents(".one-tweet").html();
-			$(".fav-punkt").append("<div class='one-tweet col-sm-9'>" + tweet + "</div>");
-
-	        // var sel = $(this).text(),
-	        //     ul = $(this).parents("ul");
-	        // console.log(sel);
-	        // ul.find("span").text(sel);
-	        // ul.children("li:not('#first')").toggle();
-	        // ul.find("li").removeClass("selected_option");
-	        // ul.toggleClass("open");
-	        // $(this).addClass("selected_option");
-    	});
 	},
 
 	_openTweetAndAddToVerlauf = function () {

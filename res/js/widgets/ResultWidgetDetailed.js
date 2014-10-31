@@ -1,19 +1,18 @@
 var favIds = [];
 
 (function ($) {
-	AjaxSolr.ResultWidget = AjaxSolr.AbstractWidget.extend({
+	AjaxSolr.ResultWidgetDetailed = AjaxSolr.AbstractWidget.extend({
 		afterRequest: function () {
 			$(this.target).empty();
 			for (var i = 0, l = this.manager.response.response.docs.length; i < l; i++) {
 				var doc = this.manager.response.response.docs[i];
 				$(this.target).append(this.template(doc));
-				_regOnClickInfo(doc);
 			}
-			_regOnClickAddButtons();
+			console.log(this.manager.response.response.docs)
+			_registerOnClickListeners(this.manager.response.response.docs);
 		},
 
 		template: function (doc) {
-			var content = linkify(doc.content)
 			var output = 
 			"<div id='" + doc.status_id+"' class='one-tweet col-sm-12'>" + 
 			"<div id='bild-container'> " +
@@ -25,11 +24,9 @@ var favIds = [];
 			"<span class='tweet-time name-container-content'> "+ doc.time + " </span>"+
 			"</div>"+
 			"<div class='text-container col-sm-10'>"+
-			"<span class='text'>"+ content +"</span> "+
-			"</div>"+ _getFavButton(doc.status_id)+ "<button type='button' id='" + doc.status_id + 
-			"-info' title='Zu Favoriten hinzufügen' class='btn btn-default btn-lg info-button'> " +
-			"<span class='glyphicon glyphicon-info-sign'></span></button>"
-			 + "</div>";
+			"<span class='text'>"+ doc.content +"</span> "+
+			"</div>"+ _getFavButton(doc.status_id) +
+			"</div>";
 			return output;
 		}
 	});
