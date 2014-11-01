@@ -5,7 +5,8 @@ $(function() {
 			'data': {'wt':'json', 'q': $("#search-field").val()},
 			'success': function(data) { 
 				$("#search-field").autocomplete({
-					source: data.spellcheck.suggestions[1].suggestion
+					source: data.spellcheck.suggestions[1].suggestion,
+					appendTo: "#autocomplete"
 				});
 			},
 			'dataType': 'jsonp',

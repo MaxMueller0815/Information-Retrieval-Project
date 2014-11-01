@@ -1,36 +1,122 @@
-var TweetManager;
+var UserManager;
+var dates = ["2014-06-02", "2014-06-03", "2014-06-04", "2014-06-05", "2014-06-06"];
+var clearStack = true;
+var stackCount = 0;
+var lastRequest;
+var useDismax = true;
 
 (function ($) {
 	$(function () {
-		TweetManager = new AjaxSolr.Manager({
-			solrUrl: 'http://localhost:8983/solr/collection1/'
-		});
 		UserManager = new AjaxSolr.Manager({
 			solrUrl: 'http://localhost:8983/solr/collection2/'
 		});
-		TweetManager.addWidget(new AjaxSolr.ResultWidget({
+		UserManager.addWidget(new AjaxSolr.ResultWidgetDetailed({
 			id: 'result',
-			target: '#docs'
+			target: '#modal-content'
 		}));
-		TweetManager.init();
 		UserManager.init();
 
 		$("#search").submit(function(event) {
+			stackCount = 0;
+			useDismax = true;
 			var term = $("#search-field").val();
-			requestFullText("content:" + term);
+			requestFullText(term);
 			event.preventDefault();
 		});
 
-		$("#search-again").click(function(event) {
-			requestFullText(buildQuery());
+		$("#search-suggestion").click(function(event) {
+			stackCount = 0;
+			useDismax = true;
+			requestFullTextUnconverted(buildQuery());
 			event.preventDefault();
+		});
+
+		$("#search-extended").click(function(event) {
+			stackCount = 0;
+			useDismax = false;
+			defaultHandlerRequest(buildUserQuery());
+			event.preventDefault();
+		});
+
+		$(".date-box").click(function(event){
+			$("#"+event.target.id).css("background-color", "#5BC0DE");
 		});
 	});
 
-	var requestFullText = function(term) {
-		TweetManager.store.addByValue('q', term);
-		TweetManager.doRequest();
-	};
+	requestFullText = function(term) {
+		term = term.replace(/[^a-zA-Z0-9]/g, '');
+		var request = "q="+ term +"&qf=hashtag_ci^2 content^1 &bf=div(ord(follower),300)^0.7&tie=0.1";
+		$.ajax({
+			url: "http://localhost:8983/solr/collection1/select?qt=dismax&rows=10&start="+stackCount+"&"+ request +"&wt=json",
+			type: 'get',
+			dataType: 'jsonp',
+			jsonp: 'json.wrf',
+			success: function(data) {
+				afterRequest(data.response.docs);
+				lastRequest = request;
+				registerMoreButton();
+				clearStack =true;
+			}
+		});
+	}
+
+		requestFullTextUnconverted = function(term) {
+		var request = "q="+ term +"&qf=hashtag_ci^2 content^1 &bf=div(ord(follower),300)^0.7&tie=0.1";
+		$.ajax({
+			url: "http://localhost:8983/solr/collection1/select?qt=dismax&rows=10&start="+stackCount+"&"+ request +"&wt=json",
+			type: 'get',
+			dataType: 'jsonp',
+			jsonp: 'json.wrf',
+			success: function(data) {
+				afterRequest(data.response.docs);
+				lastRequest = request;
+				registerMoreButton();
+				clearStack =true;
+			}
+		});
+	}
+
+	appendRequest = function(request) {
+		$.ajax({
+			url: "http://localhost:8983/solr/collection1/select?qt=dismax&rows=10&start="+stackCount+"&"+ request +"&wt=json",
+			type: 'get',
+			dataType: 'jsonp',
+			jsonp: 'json.wrf',
+			success: function(data) {
+				afterRequest(data.response.docs);
+				lastRequest = request;
+				registerMoreButton();
+				clearStack =true;
+			}
+		});
+	}
+
+	defaultHandlerRequest = function(request) {
+		$.ajax({
+			url: "http://localhost:8983/solr/collection1/select?rows=10&start="+stackCount+"&"+ request +"&wt=json",
+			type: 'get',
+			dataType: 'jsonp',
+			jsonp: 'json.wrf',
+			success: function(data) {
+				afterRequest(data.response.docs);
+				lastRequest = request;
+				registerMoreButton();
+				clearStack =true;
+			}
+		});
+	}
+
+	registerMoreButton = function() {
+		$("#more-button").click(function(event) {
+			clearStack = false;
+			stackCount += 10;
+			if (useDismax) {
+				appendRequest(lastRequest);
+			} else {
+				defaultHandlerRequest(lastRequest);
+			}
+		});
+	}
 
 	_getFavButton = function(id) {
 		var output = "<button type='button' id='" + id + "-add' title='Zu Favoriten hinzufügen' class='btn btn-default btn-lg addFav-button'> " +
@@ -49,6 +135,8 @@ var TweetManager;
 			var tweet = $(this).html();
 			$("#modal-content").empty();
 			$("#modal-content").append(_buildDetailedTweet(doc));
+			UserManager.store.addByValue('q', 'user_id:' + doc.user_id);
+			UserManager.doRequest();
 			$("#myModal").modal();
 		});
 	}
@@ -84,9 +172,6 @@ var TweetManager;
 		$(".fav-punkt").append(
 			"<div id='"+ id +"-fav' class='one-fav-punkt'>"+
 			"<div class='one-tweet col-sm-9'>" + tweet + "</div>"+
-			"<div class='term-box col-sm-3'>" + 
-			"<p class='terms'>" + $("#search-field").val() + "</p>" +
-			"</div>"+
 			"</div>"
 			);
 		_registerRemoveListener(id);
@@ -128,7 +213,6 @@ var TweetManager;
 		"<span class='tweet-time name-container-content'> "+ doc.time + " </span></div>"+
 		"<div class='text-container col-sm-10'>"+
 		"<div class='text'>"+ content +"</div> </div>"+
-		"<div class='detail-user'>" + doc.location +"</div>" +
 		"</div>";
 		return output;
 	}
@@ -138,5 +222,39 @@ var TweetManager;
 		return text.replace(urlRegex, function(url) {  
 			return '<a href="' + url + '" target="_blank">' + url + '</a>';  
 		})
+	}
+
+	afterRequest = function (docs) {
+		if (clearStack) {
+			$("#docs").empty();
+		}
+		for (var i = 0, l = docs.length; i < l; i++) {
+			var doc = docs[i];
+			$("#docs").append(template(doc));
+			_regOnClickInfo(doc);
+		}
+		_regOnClickAddButtons();
+	}
+
+	template = function (doc) {
+		$("#more-button").remove();
+		var content = linkify(doc.content)
+		var output = 
+		"<div id='" + doc.status_id+"' class='one-tweet col-sm-12'>" + 
+		"<div id='bild-container'> " +
+		"<img class='avatar col-sm-2' onerror=\"this.src='res/images/no_image.png'\" src='" + doc.image_url + "'alt='' />" + 
+		"</div>" +
+		"<div class='name-container col-sm-10'>"+
+		"<span class='user-name name-container-content'>" + doc.screen_name + " </span>"+
+		"<span class='tweet-date name-container-content'> "+ doc.date + " </span>"+
+		"<span class='tweet-time name-container-content'> "+ doc.time + " </span>"+
+		"</div>"+
+		"<div class='text-container col-sm-10'>"+
+		"<span class='text'>"+ content +"</span> "+
+		"</div>"+ _getFavButton(doc.status_id)+ "<button type='button' id='" + doc.status_id + 
+		"-info' title='Zu Favoriten hinzufügen' class='btn btn-default btn-lg info-button'> " +
+		"<span class='glyphicon glyphicon-info-sign'></span></button>"
+		+ "</div><button id='more-button' type='button' class='show-more btn btn-info col-sm-12'>Give me more!</button>";
+		return output;
 	}
 })(jQuery);

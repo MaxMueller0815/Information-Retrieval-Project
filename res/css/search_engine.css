@@ -2,12 +2,31 @@ li.nav-tabs {
 	float: left;
 }
 
-body.ui-autocomplete {
-  background-color: white;
-  width: 100px;
-  border: solid;
-  border-width: 1px;
-  border-color: grey;
+body {
+	background-color: #FBFBFC;
+}
+
+#autocomplete {
+	position: absolute;
+	background-color: white;
+	width: 170px;
+	border: solid;
+	border-radius: 5px;
+	border-width: 1px;
+	border-color: grey;
+	z-index: 1;
+}
+
+#autocomplete ul {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+.ui-helper-hidden-accessible {
+	visibility: hidden;
 }
 
 .detail-content {
@@ -17,7 +36,7 @@ body.ui-autocomplete {
 .detail-user {
 	display: block;
 	position: absolute;
-	bottom: 0;
+	margin-top: 100px;
 }
 
 .left-sidebar li {
@@ -28,6 +47,7 @@ body.ui-autocomplete {
 .left-sidebar {
 	font-size: 20px;
 	line-height: 2;
+	width: 250px;
 }
 
 .left-sidebar h4 {
@@ -52,7 +72,7 @@ h2{
 }
 
 .modal-body {
-	height: 150px;
+	height: 250px;
 	overflow-y: auto;
 }
 
@@ -88,15 +108,35 @@ h2{
 	border-width: 2px;
 	border-radius: 3px;
 	background: white;
+	padding: 5px;
 	float:left;
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.one-tweet:hover ,.term-box:hover {
-	background-color:#F5F5F5;
+.btn:hover {
+	background-color:#33ccff;
 }
 
-.one-tweet:active, .term-box:active {
+.btn {
+	background-color:#5BC0DE;
+}
+
+.date-box {
+	background-color: white;
+	border-style: solid;
+	border-color: grey;
+}
+
+.more-info {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.term-box:active {
 	background-color:#EEE;
+	background-color:#33ccff;
 }
 
 .addFav-button {
@@ -121,8 +161,21 @@ h2{
 
 .previous-search-term{
 	color: black;
-    margin: 5px;
-    cursor: pointer;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.tweets-container {
+	border-radius: 10px;
+	overflow: hidden;
+	height: 95%;
+	padding: 5px;
+	width: 500px;
+	font-size: 15px;
+}
+
+.tweets-container:hover {
+	overflow-y: scroll;
 }
 
 .previous-search-term:hover{
@@ -131,14 +184,23 @@ h2{
 
 #button-show-right{
 	width: 15px;
+	background-color: lightgrey;
 	position: absolute;
-    right: 0px;
+	right: 0px;
+}
+
+#button-show-right:hover{
+	background:#33ccff;
 }
 
 #arrow-show-right{
 	height: 760px;
 	padding-top:350px;
 	width: 15px;
+}
+
+.row {
+	margin-right: 0px;
 }
 
 #tweet-container{
@@ -149,27 +211,22 @@ h2{
 	height: 700px;
 }
 
-#fav-container{
-	height: 700px;
-}
-
-#docs, #verlauf, #fav{
-	background-color: white;
-	border: groove;
-	overflow-x: auto;
-	height: 95%;
-	padding: 5px;
-	font-size: 15px;
-}
-
 #orange{
 	position: relative;
 	height:700px;
 }
 
-#search-again {
-	position: relative;
+#fav-container {
+	margin-top: 10px;
+	height: 900px;
+}
+
+.search-again {
+	position: absolute;
 	height:50px;
+	bottom: 0px;
+	left:0px;
+	margin: auto;
 }
 
 #filter-title, #filter-title2{
@@ -178,8 +235,9 @@ h2{
 }
 
 #filter-terms{
-	font-size: 30px;
-	margin-left: 80px;
+	font-size: 15px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
 #last-search-terms-container {
@@ -194,6 +252,7 @@ h2{
 .vorschlag{
 	height:300px;
 	font-size: 15px;
+	width: 160px;
 }
 
 .my-jumbotron{
@@ -204,6 +263,10 @@ h2{
 	border-radius: 5px;
 	padding:3px;
 	height:800px;
+}
+
+.content-container {
+	width:500px;
 }
 
 .tab-pane h3 {
@@ -219,13 +282,13 @@ h2{
 }
 
 .main-container{
-	margin-left: 8%;
+     width: 1300px;
+     margin: 0 auto;
 }
 
 .search-button {
 	margin-left: 10px;
 }
-
 
 .navbar-brand {
 	margin-left: 430px;

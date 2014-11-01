@@ -23,11 +23,11 @@
   <script src="libs/core/ParameterStore.js"></script>
   <script src="libs/core/AbstractWidget.js"></script>
   <script src="libs/core/AbstractTextWidget.js"></script>
-  <script src="res/js/widgets/ResultWidget.js"></script>
-  <script src="res/js/widgets/ResultWidgetUser.js"></script>
+  <script src="res/js/widgets/ResultWidgetDetailed.js"></script>
   <script src="res/js/widgets/AutocompleteWidget.js"></script>
   <script src="res/js/QueryBuilder.js"></script>
   <script src="res/js/Twittersearch.js"></script>
+  <script src="res/js/CustomScrollbar.js"></script>
 
 </head>
 <body>
@@ -75,6 +75,7 @@
         <form class="navbar-form navbar-left" role="search" id="search">
           <div class="form-group">
             <input id="search-field" type="text" class="form-control" placeholder="Tweets durchsuchen...">
+            <div id="autocomplete"></div>
           </div>
           <button id="search-button" type="submit" name="Search" class="btn btn-lg btn-info btn-default glyphicon glyphicon-search search-button"> </button>
         </form>
@@ -85,30 +86,24 @@
 
 
   <div class="main-container">
-    <div class="row">
+    <div class="rowwerewr">
       <div class="jumbotron col-sm-2 my-jumbotron left-sidebar">
-        <div id="last-search-terms-container">
-          <h4>Zuletzt gesucht:</h4>
-          <ul id="last-search-terms">
-
-          </ul>
-        </div>
-
         <div>
           <h4>Beliebte Suchbegriffe:</h4>
-          <ul id="popular-search-terms">
+          <ul id="last-search-terms">
             <li class="col-sm-12"><a href="" data-toggle="tab">Apple</a></li>
-            <li class="col-sm-12"><a href="" data-toggle="tab">#Swift</a></li>
+            <li class="col-sm-12"><a href="" data-toggle="tab">Swift</a></li>
             <li class="col-sm-12"><a href="" data-toggle="tab">iOS</a></li>
-            <li class="col-sm-12"><a href="" data-toggle="tab">#OSX1010</a></li>
+            <li class="col-sm-12"><a href="" data-toggle="tab">OSX1010</a></li>
             <li class="col-sm-12"><a href="" data-toggle="tab">beats</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="jumbotron col-sm-4 my-jumbotron">
+      <div class="jumbotron col-sm-4 my-jumbotron content-container">
         <div id="tweet-container" class="col-sm-11">
-          <div id="docs">
+          <div id="docs" class="tweets-container">
+            <center><i>Bitte stelle eine Suchanfrage!</i></center>
           </div>
 
         </div>
@@ -119,169 +114,144 @@
 
       </div>
 
-      <div id="options" class=" tab-pane jumbotron col-sm-5 my-jumbotron fade in">
+      <div id="options" class=" tab-pane jumbotron col-sm-4 my-jumbotron content-container">
         <!-- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert-->
         <div id="content">
           <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#filter" data-toggle="tab">Erweitert</a></li>
+            <li class="active"><a href="#filter" data-toggle="tab">Erweiterte Suche</a></li>
             <li><a href="#suggestions" data-toggle="tab">Vorschläge</a></li>
-            <li><a href="#previous" data-toggle="tab">Verlauf</a></li>
             <li><a href="#favorites" data-toggle="tab">Favoriten</a></li>
           </ul>
           <div id="my-tab-content" class="tab-content">
 
             <div class="tab-pane active" id="filter">
-              <h3>Erweiterte Suche</h3>
               <div id="filter-terms">
                 <div class="checkboxes">
-                  <label><input id="check-gewichtung-1" type="checkbox" value=""> Hashtags</label>
+                  Hashtags: <input id="hashtag-search" class="form-control" type="text" value="">
                 </div>
                 <div class="checkboxes">
-                  <label><input id="check-gewichtung-2" type="checkbox" value=""> Personen</label>
+                  Nutzer: <input id="user-search" class="form-control" type="text" value="">
                 </div>
                 <div class="checkboxes">
-                  <label><input id="check-gewichtung-3" type="checkbox" value=""> Ort</label>
-                </div>
-              </div>
-
-
-            </div>
-            <div class="tab-pane" id="suggestions">
-              <div class="vorschlag col-sm-3">
-                <h3>Hashtags</h3>
-                <div class="checkboxes">
-                  <label><input id="check-hashtag-1" type="checkbox" value=""> #Apple</label>
+                  Orte: <input id="location-search" class="form-control" type="text" value="">
                 </div>
                 <div class="checkboxes">
-                  <label><input id="check-hashtag-2" type="checkbox" value=""> #Swift</label>
+                  Inhalt: <input id="content-search" class="form-control" type="text" value="">
                 </div>
-                <div class="checkboxes">
-                  <label><input id="check-hashtag-3" type="checkbox" value=""> #iOS</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-hashtag-4" type="checkbox" value=""> #OSX1010</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-hashtag-5" type="checkbox" value=""> #beats</label>
-                </div>
-              </div>
-
-              <div class="vorschlag col-sm-3">
-                <h3>Personen</h3>
-                <div class="checkboxes">
-                  <label><input id="check-person-1" type="checkbox" value=""> Tim Cook</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-person-2" type="checkbox" value=""> Craig Federighi</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-person-3" type="checkbox" value=""> Steve Jobs</label>
-                </div>
-              </div>
-
-              <div class="vorschlag col-sm-3">
-                <h3>Produkte</h3>
-                <div class="checkboxes">
-                  <label><input id="check-produkt-1" type="checkbox" value=""> iWatch</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-produkt-2" type="checkbox" value=""> HealthKit</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-produkt-3" type="checkbox" value=""> iPhone</label>
-                </div>
-              </div>
-
-              <div class="vorschlag col-sm-3">
-                <h3>Land</h3>
-                <div class="checkboxes">
-                  <label><input id="check-ort-1" type="checkbox" value=""> Deutschland</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-ort-2" type="checkbox" value=""> USA</label>
-                </div>
-                <div class="checkboxes">
-                  <label><input id="check-ort-3" type="checkbox" value=""> Ort C</label>
-                </div>
-              </div>
-
-              <div class="vorschlag col-sm-3">
-                <h3>Eigene</h3>
-                <div class="row">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input id="check-eigen-1" type="checkbox">
-                    </span>
-                    <input type="text" class="form-control">
-                  </div><!-- /input-group -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input id="check-eigen-2" type="checkbox">
-                    </span>
-                    <input type="text" class="form-control">
-                  </div><!-- /input-group -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input id="check-eigen-3" type="checkbox">
-                    </span>
-                    <input type="text" class="form-control">
-                  </div><!-- /input-group -->
-                </div><!-- /.row -->
-                <div class="row">
-                  <div class="input-group">
-                    <span class="input-group-addon">
-                      <input id="check-eigen-4" type="checkbox">
-                    </span>
-                    <input type="text" class="form-control">
-                  </div><!-- /input-group -->
-                </div><!-- /.row -->
-              </div>
-
-              <button id="search-again" type="button" class="btn btn-info col-sm-12">Search Again!</button>
-
+              </br>
+              <!--
+              <div class="checkboxes">
+                 Nur Tweets für folgende Tage suchen:</br>
+                 <div id="day-1" class="date-box btn" value="02.06.2014"> 02.06.2014</div>
+                 <div id="day-2" class="date-box btn" value="03.06.2014"> 03.06.2014</div>
+                 <div id="day-3" class="date-box btn" value="04.06.2014"> 04.06.2014</div>
+                 <div id="day-4" class="date-box btn" value="05.06.2014"> 05.06.2014</div>
+                 <div id="day-5" class="date-box btn" value="06.06.2014"> 06.06.2014</div>
+                </div>-->
+                <button id="search-extended" type="button" class="search-again btn btn-info col-sm-12">Search Again!</button>
             </div>
 
-            <div class="tab-pane" id="previous">
-              <h3>Hier befindet sich der Verlauf deiner angeschauten Tweets:</h3>
-
-              <div id="verlauf-container" class="col-sm-12">
-                <div id="verlauf">
-                  <div class="verlauf-punkt">
-                </div>
+          </div>
+          <div class="tab-pane" id="suggestions">
+            <div class="vorschlag col-sm-3">
+              <h3>Hashtags</h3>
+              <div class="checkboxes">
+                <label><input id="check-hashtag-1" type="checkbox" value='"apple"'> #Apple</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-hashtag-2" type="checkbox" value='"swift"'> #Swift</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-hashtag-3" type="checkbox" value='"ios"'> #iOS</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-hashtag-4" type="checkbox" value='"osx1010"'> #OSX1010</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-hashtag-5" type="checkbox" value='"beats"'> #beats</label>
               </div>
             </div>
+
+            <div class="vorschlag col-sm-3">
+              <h3>Personen</h3>
+              <div class="checkboxes">
+                <label><input id="check-person-1" type="checkbox" value='"tim cook"'> Tim Cook</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-person-2" type="checkbox" value='"craig federighi"'> Craig Federighi</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-person-3" type="checkbox" value='"steve jobs"'> Steve Jobs</label>
+              </div>
+            </div>
+
+            <div class="vorschlag col-sm-3">
+              <h3>Produkte</h3>
+              <div class="checkboxes">
+                <label><input id="check-produkt-1" type="checkbox" value='"iwatch"'> iWatch</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-produkt-2" type="checkbox" value='"healthkit"'> HealthKit</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-produkt-3" type="checkbox" value='"iphone"'> iPhone</label>
+              </div>
+            </div>
+
+            <div class="vorschlag col-sm-3">
+              <h3>Orte</h3>
+              <div class="checkboxes">
+                <label><input id="check-ort-1" type="checkbox" value='"deutschland"'> Deutschland</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-ort-2" type="checkbox" value='"amerika"'> Amerika</label>
+              </div>
+              <div class="checkboxes">
+                <label><input id="check-ort-3" type="checkbox" value='"frankreich"'> Frankreich</label>
+              </div>
+            </div>
+
+            <button id="search-suggestion" type="button" class="search-again btn btn-info col-sm-12">Search Again!</button>
           </div>
           <div class="tab-pane" id="favorites">
-            <h3>Hier sind deine favorisierten Tweets aufgelistet:</h3>
-            <div id="fav-container" class="col-sm-12">
+            <div id="fav-container" class="tweets-container">
               <div id="fav">
                 <div class="fav-punkt">
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
 
 
-      <script type="text/javascript">
-      jQuery(document).ready(function ($) {
-        $('#tabs').tab();
-      });
-      </script>
-      <script src="src/SearchEngine.js"></script>
-      <script src="src/UIController.js"></script>
-      <script src="src/SearchController.js"></script>
-      <script src="src/MainController.js"></script>
-      <script> 
-      $(function(){
-        SearchEngine.init();
-      });
-      </script>   
+        <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+          $('#tabs').tab();
+        });
+        </script>
+        <script src="src/SearchEngine.js"></script>
+        <script src="src/UIController.js"></script>
+        <script src="src/SearchController.js"></script>
+        <script src="src/MainController.js"></script>
+        <script> 
+        $(function(){
+          SearchEngine.init();
+          $('#docs').slimscroll({
+            color: '#33ccff',
+            size: '10px',
+            width: '100%',
+            height: '750px'                  
+          });
+          $('#fav-container').slimscroll({
+            color: '#33ccff',
+            size: '10px',
+            width: '100%',
+            height: '660px'                  
+          });
+        });
 
-    </body>
-    </html>
+        </script>  
+
+      </body>
+      </html>
