@@ -44,7 +44,7 @@ var useDismax = true;
 	});
 
 	requestFullText = function(term) {
-		term = term.replace(/[^a-zA-Z0-9]/g, '');
+		term = term.replace(/[^a-zA-Z0-9]/g, ' ');
 		var request = "q="+ term +"&qf=hashtag_ci^2 content^1 &bf=div(ord(follower),300)^0.7&tie=0.1";
 		$.ajax({
 			url: "http://localhost:8983/solr/collection1/select?qt=dismax&rows=10&start="+stackCount+"&"+ request +"&wt=json",
