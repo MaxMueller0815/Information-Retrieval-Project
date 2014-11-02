@@ -1,0 +1,1734 @@
+<add>
+	<doc>
+		<field name="id">3</field>
+		<field name="status_id">473353916059762688</field>
+		<field name="user_id">298395207</field>
+		<field name="follower">0</field>
+		<field name="screen_name">KatrinHaider</field>
+		<field name="location">Freiburg</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_5.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">08:42:22</field>
+		<field name="content">Ich habe 116,050 Goldmünzen gesammelt! http://t.co/IvHZKc58JZ #ipad, #ipadgames, #gameinsight</field>
+		<field name="hashtag">ipad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">42334</field>
+		<field name="status_id">473527139489554432</field>
+		<field name="user_id">34579517</field>
+		<field name="follower">1568</field>
+		<field name="screen_name">VfromG</field>
+		<field name="location">Göttingen, Germany. Always on.</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/461903262895968256/STxfXZnq.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:10:42</field>
+		<field name="content">Mobile Device Management for employees: #apple device set up automatically and download enterprise apps. #WWDC #UX http://t.co/Y4Bv35vpRL</field>
+		<field name="hashtag">apple</field>
+		<field name="hashtag">WWDC</field>
+		<field name="hashtag">UX</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">60568</field>
+		<field name="status_id">473557623447781377</field>
+		<field name="user_id">2211019001</field>
+		<field name="follower">0</field>
+		<field name="screen_name">Supersimschaot</field>
+		<field name="location">munich</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_2.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">22:11:49</field>
+		<field name="content">Ich habe Kürbis in Tribez &amp; Castlez für #iPad gefunden. http://t.co/iRB7XculGq #ipadgames,#gameinsight</field>
+		<field name="hashtag">iPad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">73643</field>
+		<field name="status_id">473645550517387265</field>
+		<field name="user_id">1219735986</field>
+		<field name="follower">2772</field>
+		<field name="screen_name">HITECNews</field>
+		<field name="location">Nürnberg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3307948914/0a79725c5dc48c3f6b8bcfcaf9da9d0f.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">04:01:13</field>
+		<field name="content">RT @mashable: Craig Federighi is dominating Apple keynotes http://t.co/rgNwQhwV1f</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">251923</field>
+		<field name="status_id">474804758990307328</field>
+		<field name="user_id">2384086184</field>
+		<field name="follower">5</field>
+		<field name="screen_name">macbook_sleeves</field>
+		<field name="location">irgendwo im nirgendwo.</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/443469375647936513/q0VGI1b6.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">08:47:28</field>
+		<field name="content">MacBook Air Leather Sleeve/Case | NELLY | http://t.co/wmMQzEM3ey | #MacBook #MacBookAir #MacBookRetina #MacBookSleeve #retinaSleeve #organic</field>
+		<field name="hashtag">MacBook</field>
+		<field name="hashtag">MacBookAir</field>
+		<field name="hashtag">MacBookRetina</field>
+		<field name="hashtag">MacBookSleeve</field>
+		<field name="hashtag">retinaSleeve</field>
+		<field name="hashtag">organic</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">51575</field>
+		<field name="status_id">473540173645746177</field>
+		<field name="user_id">201943463</field>
+		<field name="follower">107</field>
+		<field name="screen_name">urban23k</field>
+		<field name="location">Dornbirn, Austria</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/344513261573801083/2eeceb6a0ea10a9c145b9047df8b6c16.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">21:02:29</field>
+		<field name="content">Und wo bleibt das #iPhone6 #WWDC</field>
+		<field name="hashtag">iPhone6</field>
+		<field name="hashtag">WWDC</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">92307</field>
+		<field name="status_id">473763268478394368</field>
+		<field name="user_id">1243515810</field>
+		<field name="follower">31</field>
+		<field name="screen_name">Mariellaunsoo</field>
+		<field name="location">berlin </field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/472676712246169600/2_85oegx.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">11:48:59</field>
+		<field name="content">RT @justinbieber: Congrats to Jimmy and Dre and everyone at @beatsmusic for the deal with apple. @KennyHamilton I see u. #justbeats #tbt</field>
+		<field name="hashtag">justbeats</field>
+		<field name="hashtag">tbt</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">17514</field>
+		<field name="status_id">473468135816056832</field>
+		<field name="user_id">702719247</field>
+		<field name="follower">162</field>
+		<field name="screen_name">lovelochi</field>
+		<field name="location">münchen</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/473467648916086784/s5va3c-g.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">16:16:14</field>
+		<field name="content">RT @SaturnDE: Seid ihr auch schon so gespannt, was Apple heute auf der #WWDC vorstellt: #iPhone6, #iOS8 oder #iWatch?!</field>
+		<field name="hashtag">WWDC</field>
+		<field name="hashtag">iPhone6</field>
+		<field name="hashtag">iOS8</field>
+		<field name="hashtag">iWatch</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">44554</field>
+		<field name="status_id">473530430788861952</field>
+		<field name="user_id">2176299713</field>
+		<field name="follower">129</field>
+		<field name="screen_name">bremerberliner</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/433687741050548224/cCWHpwh7.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:23:46</field>
+		<field name="content">Tim Cook kommt auf die Bühne. Erstes Wort: &quot;Amazing&quot; #WWDC</field>
+		<field name="hashtag">WWDC</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">55956</field>
+		<field name="status_id">473547321763168256</field>
+		<field name="user_id">16309072</field>
+		<field name="follower">4865</field>
+		<field name="screen_name">alios</field>
+		<field name="location">Münster, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/459209573446844416/BSvcVU9Y.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">21:30:53</field>
+		<field name="content">2014 and apple noobs introduce another imperative programming language instead of a functional or dependently type one m) #swift</field>
+		<field name="hashtag">swift</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">54242</field>
+		<field name="status_id">473544231898718208</field>
+		<field name="user_id">269936113</field>
+		<field name="follower">288</field>
+		<field name="screen_name">PresseRSS</field>
+		<field name="location">NewsRoom</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1283946165/PresseRSS.jpg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">21:18:36</field>
+		<field name="content">Stolze #Zahlen: 800 Millionen #iOS-Geräte verkauft: #Apple zählt… http://t.co/z3EpsUySfv #PresseNachrichten</field>
+		<field name="hashtag">Zahlen</field>
+		<field name="hashtag">iOS</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">PresseNachrichten</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">96017</field>
+		<field name="status_id">473784622694674433</field>
+		<field name="user_id">81089252</field>
+		<field name="follower">87</field>
+		<field name="screen_name">Markus_Wadl</field>
+		<field name="location">Austria </field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000414865551/15bd7ee12f1128f98e2130597328722b.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">13:13:50</field>
+		<field name="content">testing the new osx 10.10 yosemite ?? #apple #yosemite #osx1010 #ui #ux #design #today #new #awesome… http://t.co/7Kn2mkCW2H</field>
+		<field name="hashtag">apple</field>
+		<field name="hashtag">yosemite</field>
+		<field name="hashtag">osx1010</field>
+		<field name="hashtag">ui</field>
+		<field name="hashtag">ux</field>
+		<field name="hashtag">design</field>
+		<field name="hashtag">today</field>
+		<field name="hashtag">new</field>
+		<field name="hashtag">awesome</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">217069</field>
+		<field name="status_id">474561042295844864</field>
+		<field name="user_id">24845922</field>
+		<field name="follower">1436</field>
+		<field name="screen_name">aptgetupdateDE</field>
+		<field name="location">Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2482983880/Space_Invader_Einzeln_Logo_Gross_500_mitext.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">16:39:02</field>
+		<field name="content">RT @littlesnitch: An OS X #Yosemite compatible nightly build is available now. http://t.co/HIUADgl2lK</field>
+		<field name="hashtag">Yosemite</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">193988</field>
+		<field name="status_id">474408451477487616</field>
+		<field name="user_id">1128683864</field>
+		<field name="follower">14</field>
+		<field name="screen_name">JerryKerr7</field>
+		<field name="location">Hessen, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3584657611/67ec0671e5f4f7ec253a90af2ec03889.jpeg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">06:32:42</field>
+		<field name="content">@ijustine It's more a developer thing this time. But the OS X redesign is really good! :)</field>
+		<field name="replied_to_status">474396211164622849</field>
+		<field name="replied_to_user">7846</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">160308</field>
+		<field name="status_id">474177543604822016</field>
+		<field name="user_id">95101804</field>
+		<field name="follower">1216</field>
+		<field name="screen_name">patrickvdd</field>
+		<field name="location">Harsewinkel, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/465932634653065216/cb37_kUU.jpeg</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">15:15:09</field>
+		<field name="content">RT @9to5mac: Apple shows off completely redesigned iTunes Connect coming later this year http://t.co/MHaLRP5fyA</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">140853</field>
+		<field name="status_id">474052348403531776</field>
+		<field name="user_id">2515170443</field>
+		<field name="follower">25</field>
+		<field name="screen_name">PSIXOPATH</field>
+		<field name="location">????????????.</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/472707506293452800/8PSEPyuC.jpeg</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">06:57:40</field>
+		<field name="content">Hey, Apple and Jony Ive: Your OSX 10.10 Redesign Fucking Sucks</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">55853</field>
+		<field name="status_id">473547182843625473</field>
+		<field name="user_id">1089789223</field>
+		<field name="follower">33</field>
+		<field name="screen_name">Goemon_XT</field>
+		<field name="location">Daheim</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3142608221/ec8f4afcad323fed28b1a48efda02a3b.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">21:30:20</field>
+		<field name="content">RT @redgirlsays: Today: Lots of big things for devs. HealthKit, HomeKit, Metal, Swift. Redesign for Mac. Lots of new Messages &amp; iOS feature…</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">104503</field>
+		<field name="status_id">473830478869708800</field>
+		<field name="user_id">322091002</field>
+		<field name="follower">145</field>
+		<field name="screen_name">ThePianomanJu</field>
+		<field name="location">Siegen</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/470273172022263808/Jivm6QSS.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">16:16:03</field>
+		<field name="content">@ChrisBeChicken iPhone ist auch schon im iOS 7 Design. Für’s iPad basteln sie noch am Redesign.</field>
+		<field name="replied_to_status">473830176263258114</field>
+		<field name="replied_to_user">40278597</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">166264</field>
+		<field name="status_id">474211629337694208</field>
+		<field name="user_id">278963353</field>
+		<field name="follower">114</field>
+		<field name="screen_name">prodromitis72</field>
+		<field name="location">Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/423940800834469889/htuOV-yT.jpeg</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">17:30:36</field>
+		<field name="content">Continuity: So verbindet Apple iOS und Macs http://t.co/2CY4opc5eK</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">253928</field>
+		<field name="status_id">474820527753007104</field>
+		<field name="user_id">244000055</field>
+		<field name="follower">970</field>
+		<field name="screen_name">Infovole</field>
+		<field name="location">Neuss, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000608833885/98192ac2ef35b5e1df23c72b3c9c2997.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">09:50:08</field>
+		<field name="content">#Continuity lässt eure Apple-Geräte bald besser miteinander kommunizieren. http://t.co/1lR4o9Ea80</field>
+		<field name="hashtag">Continuity</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">107653</field>
+		<field name="status_id">473846886202617856</field>
+		<field name="user_id">1219735986</field>
+		<field name="follower">2772</field>
+		<field name="screen_name">HITECNews</field>
+		<field name="location">Nürnberg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3307948914/0a79725c5dc48c3f6b8bcfcaf9da9d0f.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">17:21:15</field>
+		<field name="content">RT @symantec: Let The Battle Of The Cloud Commence: Apple OSX Continuity Challenges Microsoft Windows Live - http://t.co/B7zpLaxYOE</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">30362</field>
+		<field name="status_id">473512340449923072</field>
+		<field name="user_id">26289604</field>
+		<field name="follower">1782</field>
+		<field name="screen_name">HRFortmann</field>
+		<field name="location">Hamburg, Berlin, New York</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/459310596354109441/7SDvEB0-.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:11:53</field>
+		<field name="content">Kasching... Der erste #Winodws Witz :-) 51%25 User Updates für Maverick vs 14%25 für Windows8. #WWDC</field>
+		<field name="hashtag">Winodws</field>
+		<field name="hashtag">WWDC</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">222261</field>
+		<field name="status_id">474590211490721792</field>
+		<field name="user_id">502941721</field>
+		<field name="follower">255</field>
+		<field name="screen_name">HeinzRapha</field>
+		<field name="location">Oos, Eifel - Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/470952602012614657/3MZ_aul0.jpeg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">18:34:56</field>
+		<field name="content">Apple hatte das zuerst das man Whattsapp Smileys überall benutzen kann und alle machens nach ! Son kack ohne Witz :D</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">238144</field>
+		<field name="status_id">474660973564133376</field>
+		<field name="user_id">21440857</field>
+		<field name="follower">241</field>
+		<field name="screen_name">joschie</field>
+		<field name="location">Hamburg, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/467664938920841216/sxQPfGSN.jpeg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">23:16:07</field>
+		<field name="content">Tim Cook gehört nicht auf die Bühne. Holt Craig vom OSX Team!</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">96706</field>
+		<field name="status_id">473787829609566208</field>
+		<field name="user_id">53923085</field>
+		<field name="follower">509</field>
+		<field name="screen_name">MarcoDahms</field>
+		<field name="location">ganzwoanders</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/461206669067030530/Tw5f84wu.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">13:26:34</field>
+		<field name="content">(Warum steht Tim Cook bei sowas überhaupt noch auf der Bühne, wenn Federighi eh alles alleine macht?)</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">216421</field>
+		<field name="status_id">474556207823593472</field>
+		<field name="user_id">364178781</field>
+		<field name="follower">443</field>
+		<field name="screen_name">Fresenius_Jobs</field>
+		<field name="location">Bad Homburg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/459709640675041280/gUW7LaeM.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">16:19:49</field>
+		<field name="content">Als letzter Redner des Tages betritt nun Keynote Speaker Marc Gassert die Bühne. #fresenius_mtb</field>
+		<field name="hashtag">fresenius_mtb</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">123093</field>
+		<field name="status_id">473910021420355585</field>
+		<field name="user_id">2272978051</field>
+		<field name="follower">168</field>
+		<field name="screen_name">Vorarlberg1</field>
+		<field name="location">around the world</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/419265943382925312/EV9B9Gro.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:32:07</field>
+		<field name="content">Craig Federighi: Software-Experte mit Bühnentalent http://t.co/eTkuOYCd4Q</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">217059</field>
+		<field name="status_id">474560976977932288</field>
+		<field name="user_id">230442757</field>
+		<field name="follower">942</field>
+		<field name="screen_name">3bconsult</field>
+		<field name="location">Koeln</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3339624896/8fc948aae961fddc0a4d6345f1350f97.jpeg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">16:38:46</field>
+		<field name="content">Hoping to lure cloud developers to the iCloud platform, Apple on Monday unveiled CloudKit, which gives developers... http://t.co/PFLemWAUEe</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">271781</field>
+		<field name="status_id">474938787202859008</field>
+		<field name="user_id">2323701847</field>
+		<field name="follower">21</field>
+		<field name="screen_name">geht_klar</field>
+		<field name="location">hamburg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/429953896060968961/srPUuHUb.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">17:40:03</field>
+		<field name="content">iCloud Drive auch für freie Apps http://t.co/BHXjVKKGW7 - Geht klar, oder?</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">217135</field>
+		<field name="status_id">474561544848936961</field>
+		<field name="user_id">607434181</field>
+		<field name="follower">365</field>
+		<field name="screen_name">iSimpleApps</field>
+		<field name="location">Erfurt, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/455342211463266304/iyWtUQQw.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">16:41:02</field>
+		<field name="content">RT @9to5mac: iCloud Drive enables non-Mac App Store apps to use iCloud document storage http://t.co/7AoeyvshmO</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">33193</field>
+		<field name="status_id">473515681888362496</field>
+		<field name="user_id">539252056</field>
+		<field name="follower">153</field>
+		<field name="screen_name">AppleWerbung_de</field>
+		<field name="location">Baden-Württemberg, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/471726360948244480/H4o1njoK.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:25:10</field>
+		<field name="content">iCloud Drive - interessant! #WWDC</field>
+		<field name="hashtag">WWDC</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">104297</field>
+		<field name="status_id">473829225351643136</field>
+		<field name="user_id">390641961</field>
+		<field name="follower">73</field>
+		<field name="screen_name">Eventphant</field>
+		<field name="location">Waiblingen, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2249043439/logo.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">16:11:04</field>
+		<field name="content">Apple announces iOS 8 with widgets and OS X Continuity | The Verge http://t.co/I7VnlXaWJn</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">255188</field>
+		<field name="status_id">474830841953415168</field>
+		<field name="user_id">897198320</field>
+		<field name="follower">664</field>
+		<field name="screen_name">webma9</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2880750678/c0c9e169fea15f6556488dfc4b07896f.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">10:31:07</field>
+		<field name="content">#Apple hat auf der #WWDC14 keine Hardware-Neuerungen vorgestellt. Dafür gab's #iOS8 und #OSX1010Yosemite - http://t.co/EDRUCtdBHt</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="hashtag">iOS8</field>
+		<field name="hashtag">OSX1010Yosemite</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">150841</field>
+		<field name="status_id">474117009949483008</field>
+		<field name="user_id">373008014</field>
+		<field name="follower">188</field>
+		<field name="screen_name">frahafi</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1541527841/FrankWeb.JPG</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">11:14:37</field>
+		<field name="content">Apple OSX 10.10 Yosemite kommt: Flaches Design, neue Funktionen http://t.co/krWl7fWwqp</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">30825</field>
+		<field name="status_id">473512903828832256</field>
+		<field name="user_id">2537589661</field>
+		<field name="follower">2</field>
+		<field name="screen_name">TecSpex</field>
+		<field name="location">Friedberg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/473465726200602624/5yX-xA82.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:14:07</field>
+		<field name="content">Der neue Name für OSX 10.10 lautet YOSEMITE!</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">256650</field>
+		<field name="status_id">474842931413938176</field>
+		<field name="user_id">128213477</field>
+		<field name="follower">263</field>
+		<field name="screen_name">m_spreitz</field>
+		<field name="location">Munich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3327746971/c2fd3ec8c9b66d40002749a5389579da.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">11:19:09</field>
+		<field name="content">RT @Technologeeks: Preliminary notes on #ios8 and #OSX 10.10 DP1 new low level APIs and system calls - http://t.co/yJ1wTigar4</field>
+		<field name="hashtag">ios8</field>
+		<field name="hashtag">OSX</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">257448</field>
+		<field name="status_id">474849209376841728</field>
+		<field name="user_id">1148264244</field>
+		<field name="follower">5</field>
+		<field name="screen_name">ApfelVerleih</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/431788920989167617/6O9vbDIQ.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">11:44:06</field>
+		<field name="content">Kein #ios8 ohne #OSX #Yosemite! Und der große Bruder hat es in sich! http://t.co/hsK6LohmQg</field>
+		<field name="hashtag">ios8</field>
+		<field name="hashtag">OSX</field>
+		<field name="hashtag">Yosemite</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">268616</field>
+		<field name="status_id">474920192724967424</field>
+		<field name="user_id">31423172</field>
+		<field name="follower">1227</field>
+		<field name="screen_name">JAXenter</field>
+		<field name="location">Frankfurt</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000113457874/bec19fed25572c2da6b912b98ff2ed53.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">16:26:10</field>
+		<field name="content">#Apple #swift - Brauchen wir wirklich noch eine neue Programmiersprache? [Kommentar] http://t.co/ilwkvbMQKb</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">swift</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">91513</field>
+		<field name="status_id">473758760448823297</field>
+		<field name="user_id">249105903</field>
+		<field name="follower">294</field>
+		<field name="screen_name">monostep</field>
+		<field name="location">Saarbrücken</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/431022535711277056/R0y6zs7a.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">11:31:04</field>
+		<field name="content">Die iPhone-Fotos von Julian Calverley sind grandios! http://t.co/NAjUlZyKBv</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">125296</field>
+		<field name="status_id">473917361607958528</field>
+		<field name="user_id">571119065</field>
+		<field name="follower">31</field>
+		<field name="screen_name">maschinentexte</field>
+		<field name="location">Paradise</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2190848574/0f51336c8508dffd8b177d26e8e980a8.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">22:01:17</field>
+		<field name="content">chapó #apple! #swift reads as a very well defined language. i wonder what about thread safety and parallel programming techniques…</field>
+		<field name="hashtag">apple</field>
+		<field name="hashtag">swift</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">251653</field>
+		<field name="status_id">474802522113458176</field>
+		<field name="user_id">203654063</field>
+		<field name="follower">173</field>
+		<field name="screen_name">Kleeblatt1977</field>
+		<field name="location">49.43559,10.956268</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2888935372/1c9d8c70fd4a8363d9bf0905c4efd560.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">08:38:35</field>
+		<field name="content">Produktion von iWatch-Komponenten beginnt, Verkaufsstart im September?|Via Rss Runner http://t.co/pEwGi3bz3x</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">93060</field>
+		<field name="status_id">473768022029922304</field>
+		<field name="user_id">463763056</field>
+		<field name="follower">61</field>
+		<field name="screen_name">mr_pankow</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3514799381/45a53720ba4950bc2ba62bc0b4a1e904.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">12:07:52</field>
+		<field name="content">RT @kupferwerk: we're excited! neue sprache, neues glück :) ibook zu swift schon runtergeladen? :) https://t.co/a0SPCh4emm</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">94838</field>
+		<field name="status_id">473778357004693504</field>
+		<field name="user_id">15668423</field>
+		<field name="follower">621</field>
+		<field name="screen_name">Sven_G</field>
+		<field name="location">Bochum</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3783702938/b5dd19f3f4b4570114969f2c0ab863be.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">12:48:56</field>
+		<field name="content">Wenn den BürgerInnen doch der Angriff auf Ihre Privatheit so wichtig wäre wie das fehlen eines #iphone6.</field>
+		<field name="hashtag">iphone6</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">51886</field>
+		<field name="status_id">473540608582500353</field>
+		<field name="user_id">41785099</field>
+		<field name="follower">198</field>
+		<field name="screen_name">florianpaetzold</field>
+		<field name="location">Recklinghausen</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/469731272760098817/mCGyYhZ5.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">21:04:13</field>
+		<field name="content">oh keine #iphone6</field>
+		<field name="hashtag">iphone6</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">29523</field>
+		<field name="status_id">473510976940417024</field>
+		<field name="user_id">701421594</field>
+		<field name="follower">21</field>
+		<field name="screen_name">jan96123</field>
+		<field name="location">Essen, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/457153362220560384/EamrlyFC.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:06:28</field>
+		<field name="content">Tim cook is on stage</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">129138</field>
+		<field name="status_id">473931195466543105</field>
+		<field name="user_id">289331391</field>
+		<field name="follower">164</field>
+		<field name="screen_name">henrik_jacobs</field>
+		<field name="location">Hamburg/Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3252262100/905bb5b0ec40ff66e6e8d0a3d9b51a13.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">22:56:16</field>
+		<field name="content">Der wahrscheinlich längste Liveticker der Welt! Und bis September vergeht noch viel Zeit... #iphone6 http://t.co/POjppBCY75 @TOnline_TopNews</field>
+		<field name="hashtag">iphone6</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">34782</field>
+		<field name="status_id">473517693489131520</field>
+		<field name="user_id">2450215873</field>
+		<field name="follower">8</field>
+		<field name="screen_name">twistthedance</field>
+		<field name="location">Perry Street 66, NY</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/465400837830111233/GSwlmJrz.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:33:09</field>
+		<field name="content">Jetzt stellt endlich das #iPhone6 vor, alles andere interessiert doch keinen. #wwdc</field>
+		<field name="hashtag">iPhone6</field>
+		<field name="hashtag">wwdc</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">130170</field>
+		<field name="status_id">473935694709018624</field>
+		<field name="user_id">48374911</field>
+		<field name="follower">602</field>
+		<field name="screen_name">DwieDaniel_</field>
+		<field name="location">Ammersee, BY, Germany, EU</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000758408109/a49373ae104a2f242fb96ce664911376.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">23:14:08</field>
+		<field name="content">RT @apfellike: Letzter Satz von Tim Cook gestern: „This is something, only Apple can do!“</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124264</field>
+		<field name="status_id">473914042093170688</field>
+		<field name="user_id">410262828</field>
+		<field name="follower">192</field>
+		<field name="screen_name">chrrischii</field>
+		<field name="location">Hamburg meine Perle </field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000712674514/98ee30921ca978d5dc7ef523123b660f.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:48:06</field>
+		<field name="content">RT @markgurman: I am convinced Apple completely redesigned Healthbook and dropped the &quot;book&quot; because of the leak.</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">131705</field>
+		<field name="status_id">473944676676804609</field>
+		<field name="user_id">1089244188</field>
+		<field name="follower">34</field>
+		<field name="screen_name">9573_</field>
+		<field name="location">Klagenfurt/Austria</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/459832742796996608/mj_mDHiE.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">23:49:50</field>
+		<field name="content">I love how literally the key selling point of the next iOS is Healthbook which is able to pass literally everything about u on to anyone</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">42362</field>
+		<field name="status_id">473527171773112320</field>
+		<field name="user_id">133353447</field>
+		<field name="follower">75</field>
+		<field name="screen_name">frwms</field>
+		<field name="location">Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/458517991580532736/d1jHKTm3.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:10:49</field>
+		<field name="content">Wie Apple in letzter Minute noch HealthBook zu HealthKit umbenannt hat, um alle zu trollen. #WWDC14</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">99955</field>
+		<field name="status_id">473805008408817665</field>
+		<field name="user_id">271064326</field>
+		<field name="follower">354</field>
+		<field name="screen_name">Mac_Cop</field>
+		<field name="location">Nirvana</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2402709790/abe4q530i3wdn8uy7x8j.gif</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">14:34:50</field>
+		<field name="content">iOS 8: Ein erster Blick auf Health und HealthKit: Apple glaubt für die neue App Health und das dazugehörige En... http://t.co/hoSSOErA49</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">42368</field>
+		<field name="status_id">473527177129234432</field>
+		<field name="user_id">39522100</field>
+		<field name="follower">678</field>
+		<field name="screen_name">igadget_news</field>
+		<field name="location">Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000815336734/d037844ec952a13c9aa8a635a0c1225b.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:10:50</field>
+		<field name="content">iOS 8 bekommt tatsächlich Gesundheits-Features. Healthkit sammelt alle Gesundheitsdaten. Die dazugehörige App heißt Health.</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">254148</field>
+		<field name="status_id">474822726319083520</field>
+		<field name="user_id">2371652581</field>
+		<field name="follower">330</field>
+		<field name="screen_name">frohberg_news</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/456322109233299456/ih6VSJ4L.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">09:58:52</field>
+		<field name="content">RT @DoktorJohannes: Apple bietet nun mit seiner App HealthKit eine Sammelstelle für Medizin- und Fitness-Werte http://t.co/sAyUJLfgSM</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">63961</field>
+		<field name="status_id">473566169820303360</field>
+		<field name="user_id">103409283</field>
+		<field name="follower">280</field>
+		<field name="screen_name">knukkohed</field>
+		<field name="location">Kiel</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000209809058/35c31f9a4fe0ec752381ba91ea54ebb6.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">22:45:47</field>
+		<field name="content">gibts iTunesRadio denn jetzt endlich mal auch für deutschland? #ios8 #keynote</field>
+		<field name="hashtag">ios8</field>
+		<field name="hashtag">keynote</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">44957</field>
+		<field name="status_id">473530996084994049</field>
+		<field name="user_id">342674138</field>
+		<field name="follower">8348</field>
+		<field name="screen_name">gagasbae</field>
+		<field name="location">backstage </field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/472290307628072960/C27d4Wf6.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:26:01</field>
+		<field name="content">BTW GET ITUNES RADIO TO GERMANY FINALLY LMFAO</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">250318</field>
+		<field name="status_id">474794514574348288</field>
+		<field name="user_id">483187622</field>
+		<field name="follower">426</field>
+		<field name="screen_name">iBlogNews</field>
+		<field name="location">iCloud</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2810268742/283eade70edc1e8170280339ee9de096.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">08:06:46</field>
+		<field name="content">Beats-Übernahme: iTunes-Ingenieure hörten lieber Spotify als iTunes Radio http://t.co/J2Uq5h7a71</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">263276</field>
+		<field name="status_id">474891792840536065</field>
+		<field name="user_id">312729744</field>
+		<field name="follower">181</field>
+		<field name="screen_name">obbulus</field>
+		<field name="location">Freiburg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1563649788/Profilbild_joe_shortened.jpg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">14:33:19</field>
+		<field name="content">Report: Apple Needed The Beats Deal Because Its iTunes Radio Team Was Clueless (AAPL) http://t.co/U14hzsvFde</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">48781</field>
+		<field name="status_id">473536372389998592</field>
+		<field name="user_id">1843202965</field>
+		<field name="follower">22</field>
+		<field name="screen_name">maximantei</field>
+		<field name="location">Stuttgart</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/470548668274077697/0PywV11k.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:47:23</field>
+		<field name="content">#apfellike iTunes Radio für Europa? Ich hoffe es immer noch sehr.</field>
+		<field name="hashtag">apfellike</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">218194</field>
+		<field name="status_id">474567872362975232</field>
+		<field name="user_id">460066483</field>
+		<field name="follower">1950</field>
+		<field name="screen_name">TheCommsCulture</field>
+		<field name="location">Munich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2260645576/421676_10150636095819165_831064164_8887122_927134957_n.jpg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">17:06:10</field>
+		<field name="content">Apple's New iPhone Ad Is All About Wearables http://t.co/x5db1zKfKU #Wearables #Iwatch #Business #Advertising #facebook #social</field>
+		<field name="hashtag">Wearables</field>
+		<field name="hashtag">Iwatch</field>
+		<field name="hashtag">Business</field>
+		<field name="hashtag">Advertising</field>
+		<field name="hashtag">facebook</field>
+		<field name="hashtag">social</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">251088</field>
+		<field name="status_id">474799141026299904</field>
+		<field name="user_id">203654063</field>
+		<field name="follower">173</field>
+		<field name="screen_name">Kleeblatt1977</field>
+		<field name="location">49.43559,10.956268</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2888935372/1c9d8c70fd4a8363d9bf0905c4efd560.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">08:25:09</field>
+		<field name="content">iWatch soll angeblich zusammen mit dem iPhone 6 vorgestellt werden|Via Rss Runner http://t.co/vDciQJBYUV</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">49224</field>
+		<field name="status_id">473537016903528449</field>
+		<field name="user_id">2144891</field>
+		<field name="follower">165</field>
+		<field name="screen_name">dnkrupinski</field>
+		<field name="location">Hannover, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000845633244/40fbf3f446ac0076db8869588aad7e60.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:49:56</field>
+		<field name="content">RT @jjlin: So what would the headline at &quot;news&quot; site be? &quot;Apple disappoints with no new iWatch, iPhone or iPad&quot;</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">263563</field>
+		<field name="status_id">474893574870695936</field>
+		<field name="user_id">266016644</field>
+		<field name="follower">678</field>
+		<field name="screen_name">Odin666CF_DE</field>
+		<field name="location">Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3311260211/3942a769ccb9bcf7a2693d5908130793.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">14:40:23</field>
+		<field name="content">Apple iWatch Coming In October With Curved OLED Screen And Health Tracking, Says Nikkei | TechCrunch - See... http://t.co/5M6uaNDR1K</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">130727</field>
+		<field name="status_id">473938911991828482</field>
+		<field name="user_id">1624089966</field>
+		<field name="follower">0</field>
+		<field name="screen_name">TamaraGarnatz</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000347345461/bc854883100865f93cfd1cf3085c914b.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">23:26:55</field>
+		<field name="content">RT @techstagede: Schon wieder keine iWatch. Hat's Apple nicht mehr drauf? http://t.co/g2SCIgEtYL</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">130765</field>
+		<field name="status_id">473939100127342595</field>
+		<field name="user_id">2398038666</field>
+		<field name="follower">1056</field>
+		<field name="screen_name">holiday24travel</field>
+		<field name="location">Paradise</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/446309133340262400/FZfNmy5o.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">23:27:41</field>
+		<field name="content">• • iOS 8 512 • Eight key features of iOS 8 http://t.co/Mmuo15sZcZ http://t.co/NCDDZODENL</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">253447</field>
+		<field name="status_id">474816403623919616</field>
+		<field name="user_id">2286610228</field>
+		<field name="follower">21</field>
+		<field name="screen_name">Iphone_limit</field>
+		<field name="location">San Francisco, CA</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/423918252755267584/Xo8A0AQN.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">09:33:45</field>
+		<field name="content">#Gizmodo : iOS 8: Diese fantastischen Features hat euch Apple nicht gezeigt : http://t.co/Pna4CihJVw</field>
+		<field name="hashtag">Gizmodo</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">49263</field>
+		<field name="status_id">473537075522719744</field>
+		<field name="user_id">460066483</field>
+		<field name="follower">1950</field>
+		<field name="screen_name">TheCommsCulture</field>
+		<field name="location">Munich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2260645576/421676_10150636095819165_831064164_8887122_927134957_n.jpg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:50:10</field>
+		<field name="content">WhatsApp Founder Not Impressed By Apple’s New iMessage Features http://t.co/MTE150WXH7 #TC #Apple #imessage #tech</field>
+		<field name="hashtag">TC</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">imessage</field>
+		<field name="hashtag">tech</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">49724</field>
+		<field name="status_id">473537895224311808</field>
+		<field name="user_id">513293383</field>
+		<field name="follower">162</field>
+		<field name="screen_name">LigantoNews</field>
+		<field name="location">Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/459613793559928832/N6PI2XO0.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:53:26</field>
+		<field name="content">LIVE HIGHLIGHTS: New Apple Mac features unveiled (AP News) - AP NewsLIVE HIGHLIGHTS: New Apple Mac features unveil... http://t.co/EYlyvraxNP</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">218462</field>
+		<field name="status_id">474569604119793664</field>
+		<field name="user_id">2236783614</field>
+		<field name="follower">250</field>
+		<field name="screen_name">us24news</field>
+		<field name="location">usa</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_2.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">17:13:03</field>
+		<field name="content">RT @janinebucks: California USA Downey » http://t.co/5FvYJbleW4 629 Great artists steal: The iOS 8 features inspired by Android iOS 8 janin…</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">130829</field>
+		<field name="status_id">473939404268908545</field>
+		<field name="user_id">266016644</field>
+		<field name="follower">678</field>
+		<field name="screen_name">Odin666CF_DE</field>
+		<field name="location">Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3311260211/3942a769ccb9bcf7a2693d5908130793.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">23:28:53</field>
+		<field name="content">Top 8 Coolest Features of Apple’s Newly Unveiled iOS 8 | @scoopit http://t.co/o3mHKnBW1s</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">118208</field>
+		<field name="status_id">473892086954336256</field>
+		<field name="user_id">1219735986</field>
+		<field name="follower">2772</field>
+		<field name="screen_name">HITECNews</field>
+		<field name="location">Nürnberg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3307948914/0a79725c5dc48c3f6b8bcfcaf9da9d0f.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">20:20:51</field>
+		<field name="content">RT @ForbesTech: Video: Apple's new features seem a lot like Dropbox, WhatsApp and SwiftKey. http://t.co/J0LWeQpinw</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">119058</field>
+		<field name="status_id">473895706269614081</field>
+		<field name="user_id">1136595200</field>
+		<field name="follower">41</field>
+		<field name="screen_name">Jeannette_Bot</field>
+		<field name="location">Karlsruhe</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/471721407404314624/gspKtc9j.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">20:35:14</field>
+		<field name="content">10 Things To Know. The New iPhone Software, iOS 8, Has A Bunch Of New Features For Business Users (AAPL) http://t.co/uW3Ygdl2Wt</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">49726</field>
+		<field name="status_id">473537899548663808</field>
+		<field name="user_id">75100269</field>
+		<field name="follower">56</field>
+		<field name="screen_name">moritzhartnagel</field>
+		<field name="location">Siegen</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2108020941/381814_2925029046705_1290263845_33242404_775244023_n.jpg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:53:27</field>
+		<field name="content">Swype, Widgets, etc. - iOS 8 hat viele neue Features, aber warum kommen die mir alle so bekannt vor? #WWDC14 #android http://t.co/xp4yh8GTtO</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="hashtag">android</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">276394</field>
+		<field name="status_id">474966639398514688</field>
+		<field name="user_id">273939304</field>
+		<field name="follower">2841</field>
+		<field name="screen_name">AppDated_de</field>
+		<field name="location">Darmstadt</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3640633035/be57dec239cf53c73284da9b0fdf7575.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">19:30:43</field>
+		<field name="content">Samsung Galaxy S5: Die Reaktion auf das Apple iPhone 6 http://t.co/SIvGpR7Mob</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">5703</field>
+		<field name="status_id">473396708588929024</field>
+		<field name="user_id">558563403</field>
+		<field name="follower">258</field>
+		<field name="screen_name">presigno</field>
+		<field name="location">Dortmund</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2970538448/d8ad1f3751115e30b57c5ae5c66d0513.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">11:32:24</field>
+		<field name="content">Kinder testen #Apple aus den 70ern. Die Reaktionen auf die Bildschirme ohne #Touchscreen findet Ihr hier: http://t.co/Prx2MH608r #youtube</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">Touchscreen</field>
+		<field name="hashtag">youtube</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">89025</field>
+		<field name="status_id">473744829772345345</field>
+		<field name="user_id">1395012252</field>
+		<field name="follower">14</field>
+		<field name="screen_name">alexj1976</field>
+		<field name="location">Munich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3601696761/9f63f12b791e643fb7649e022ea8f2da.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">10:35:43</field>
+		<field name="content">@andreas_schenk @mkremp Time will tell. Ich erinnere mich gerne an 2001 als wir den iPod vorgestellt haben, mit ähnlichen Reaktionen... ;-)</field>
+		<field name="replied_to_status">473742006486056960</field>
+		<field name="replied_to_user">23744643</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">152753</field>
+		<field name="status_id">474129112815370240</field>
+		<field name="user_id">327469039</field>
+		<field name="follower">336</field>
+		<field name="screen_name">konsensor</field>
+		<field name="location">Berlin</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2295226604/en615ncbvbpfehhvpwjt.jpeg</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">12:02:42</field>
+		<field name="content">@_to_bi_as_ Ich auch nicht. Heute also mal 'nen ganzen Tag mit Apple Maps unterwegs. Läuft. :)</field>
+		<field name="replied_to_status">474103657416626176</field>
+		<field name="replied_to_user">15910647</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">32501</field>
+		<field name="status_id">473514680447959040</field>
+		<field name="user_id">214226791</field>
+		<field name="follower">583</field>
+		<field name="screen_name">Rodikachu</field>
+		<field name="location">Frankfurt am Main, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/471779938652418048/7QMfZ9CF.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:21:11</field>
+		<field name="content">Und ist immer noch unaktuell. RT @Vicionius: Aber Maps sieht immer noch scheiße aus. #WWDC14</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">258176</field>
+		<field name="status_id">474854645534560256</field>
+		<field name="user_id">90491801</field>
+		<field name="follower">160</field>
+		<field name="screen_name">chris_rohrer</field>
+		<field name="location">Stuttgart</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3734072112/9c1fdea45cca4da9bd945232315755e2.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">12:05:42</field>
+		<field name="content">RT @graouts: New in iOS 8 and Yosemite, #JavaScript support for maps, sets, for…of, spread operator, return value deconstruction and more. …</field>
+		<field name="hashtag">JavaScript</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">35348</field>
+		<field name="status_id">473518673144340480</field>
+		<field name="user_id">1904276664</field>
+		<field name="follower">12</field>
+		<field name="screen_name">SteinigeSache</field>
+		<field name="location">Steinbruch</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000775789217/c1bb6060429d00754f3445035853b1da.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:37:03</field>
+		<field name="content">RT @weedmaps: Apple just said that they almost named their new operating system &quot;OS X WEED&quot; #WWDC14 http://t.co/YV2SCW9nOk</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">195518</field>
+		<field name="status_id">474415992446013440</field>
+		<field name="user_id">624668875</field>
+		<field name="follower">1081</field>
+		<field name="screen_name">OpenDataZurich</field>
+		<field name="location">Zürich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000333819795/6778050adab451f0d36f79d25c8330fd.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">07:02:39</field>
+		<field name="content">RT @Mapbox: Design matters. More than just better maps for iOS, developers need control over everything: http://t.co/4xGXHgVUZf http://t.co…</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">200258</field>
+		<field name="status_id">474445137649864704</field>
+		<field name="user_id">1331262426</field>
+		<field name="follower">79</field>
+		<field name="screen_name">soerenlindhoff</field>
+		<field name="location">Bremen, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/378800000827678683/ed1af2939a0ea011fe8581a648c6894d.jpeg</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">08:58:28</field>
+		<field name="content">@NateIngraham Same here, noticed that Apple Maps got a lot better lately.</field>
+		<field name="replied_to_status">474378146507014144</field>
+		<field name="replied_to_user">92095091</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">282159</field>
+		<field name="status_id">474997320186994688</field>
+		<field name="user_id">460066483</field>
+		<field name="follower">1950</field>
+		<field name="screen_name">TheCommsCulture</field>
+		<field name="location">Munich</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2260645576/421676_10150636095819165_831064164_8887122_927134957_n.jpg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">21:32:38</field>
+		<field name="content">Report: Apple Buys Spotsetter, a Location Recommendation App http://t.co/YR00Ea20eM #Apple #Startups #Business #AppleMaps #facebook #social</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">Startups</field>
+		<field name="hashtag">Business</field>
+		<field name="hashtag">AppleMaps</field>
+		<field name="hashtag">facebook</field>
+		<field name="hashtag">social</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">35465</field>
+		<field name="status_id">473518762097143808</field>
+		<field name="user_id">246998220</field>
+		<field name="follower">519</field>
+		<field name="screen_name">hatschepsut99</field>
+		<field name="location">Instagram : _perrys_pics_ </field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2846470316/b8889ab551c172d8bcdba4c4af0b139d.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:37:24</field>
+		<field name="content">“@iPhoneTeam: Yosemite Search also looks up maps, wikipedia and restaurants...just like iOS search http://t.co/Yyeys4ECMq”</field>
+		<field name="replied_to_status">473515548475527169</field>
+		<field name="replied_to_user">249527815</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">290371</field>
+		<field name="status_id">475044791026454529</field>
+		<field name="user_id">15650255</field>
+		<field name="follower">230</field>
+		<field name="screen_name">phschneider</field>
+		<field name="location">Saarbrücken, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1238734625/avatar-rasiert.jpg</field>
+		<field name="date">2014-06-07</field>
+		<field name="time">00:41:16</field>
+		<field name="content">ich verabschiede mich vom moscone center. war ne schöne zeit. genieße nun noch etwas die sonne im yerba buena garden.</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">41757</field>
+		<field name="status_id">473526291933982720</field>
+		<field name="user_id">163453460</field>
+		<field name="follower">18</field>
+		<field name="screen_name">cdg_macaddict</field>
+		<field name="location">Paderborn, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/448042995497963520/n6YfSyLB.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">20:07:19</field>
+		<field name="content">Die Stimmung on stage ist ja wirklich gut, toller »team spirit« #WWDC14 #ATLN</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="hashtag">ATLN</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">27655</field>
+		<field name="status_id">473507797389557760</field>
+		<field name="user_id">233128548</field>
+		<field name="follower">120</field>
+		<field name="screen_name">iRodknocker</field>
+		<field name="location">Frankfurt am Main</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1802221387/iRodknocker.jpg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">18:53:50</field>
+		<field name="content">Stimmung bei der #WWDC scheint gut zu sein :)</field>
+		<field name="hashtag">WWDC</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">30949</field>
+		<field name="status_id">473513006979354625</field>
+		<field name="user_id">78139585</field>
+		<field name="follower">435</field>
+		<field name="screen_name">bennihahn</field>
+		<field name="location">Wiesbaden, Deutschland</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/442742033137283072/Q8p_oykN.png</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">19:14:32</field>
+		<field name="content">Mehr Stimmung als beim Länderspiel #wwdc</field>
+		<field name="hashtag">wwdc</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">263683</field>
+		<field name="status_id">474894278968475648</field>
+		<field name="user_id">38843651</field>
+		<field name="follower">121</field>
+		<field name="screen_name">dahanbn</field>
+		<field name="location">Bonn</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3385036891/5b4834840e5372511f87c5abf4403535.jpeg</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">14:43:11</field>
+		<field name="content">Banking4 RT @subsembly: Und auf http://t.co/zCGK8HLUBx gibt es sogar einen Testbericht. Den hatte ich irgendwie übersehen.</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">251158</field>
+		<field name="status_id">474799443787939840</field>
+		<field name="user_id">596203432</field>
+		<field name="follower">1</field>
+		<field name="screen_name">Rektumrange</field>
+		<field name="location">Wolfsburg</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_6.png</field>
+		<field name="date">2014-06-06</field>
+		<field name="time">08:26:21</field>
+		<field name="content">Hütte wurde verbessert! Kannst du das auch? Finde es heraus! http://t.co/VxkPw3kUHy #ipad, #ipadgames, #gameinsight</field>
+		<field name="hashtag">ipad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">95318</field>
+		<field name="status_id">473780792754061312</field>
+		<field name="user_id">209054410</field>
+		<field name="follower">11183</field>
+		<field name="screen_name">Hierkaufich</field>
+		<field name="location">DE - Remscheid - IMPRESSUM</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/1154247561/HKIE_ico.JPG</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">12:58:37</field>
+		<field name="content">iCloud wird zur Dropbox: Apple erleichtert Dateisynchronisation in iOS 8 und OS X Yosemite: Apple öffnet seine... http://t.co/VO30nGsR9R</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">142798</field>
+		<field name="status_id">474063214116737024</field>
+		<field name="user_id">612703915</field>
+		<field name="follower">162</field>
+		<field name="screen_name">nickbahlkebot</field>
+		<field name="location">Schleswig Holstein</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2830939131/697552223d459bae3b737a0142bc4e51.png</field>
+		<field name="date">2014-06-04</field>
+		<field name="time">07:40:51</field>
+		<field name="content">#9gag What better way to show off the new feature than to call Dr. Dre live on stage? (Apple WWDC 2014):  http://t.co/nwSM2IJCQc</field>
+		<field name="hashtag">9gag</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">92566</field>
+		<field name="status_id">473765092585402368</field>
+		<field name="user_id">1021956078</field>
+		<field name="follower">19</field>
+		<field name="screen_name">juergenklos1</field>
+		<field name="location">Worms am Rhein</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/3753716972/3ddd5a26e3591f474df3facb7392a559.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">11:56:14</field>
+		<field name="content">Apple verbessert das App-Marketing http://t.co/rFJrSx68gV</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">64607</field>
+		<field name="status_id">473568174873804800</field>
+		<field name="user_id">2716671</field>
+		<field name="follower">692</field>
+		<field name="screen_name">michelb</field>
+		<field name="location">Your mom</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/428233546801872896/iHNIaVHU.jpeg</field>
+		<field name="date">2014-06-02</field>
+		<field name="time">22:53:45</field>
+		<field name="content">RT @wiwo: Was #Apple heute abend vorstellte:  das Protokoll des Abends, aufgeschrieben von @katti http://t.co/kzXKhdvVQ7 #WWDC14</field>
+		<field name="hashtag">Apple</field>
+		<field name="hashtag">WWDC14</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">1</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">220341</field>
+		<field name="status_id">474579442002853888</field>
+		<field name="user_id">928441999</field>
+		<field name="follower">2</field>
+		<field name="screen_name">ErsigaLiviu</field>
+		<field name="location">Goettingen, Germany</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_2.png</field>
+		<field name="date">2014-06-05</field>
+		<field name="time">17:52:09</field>
+		<field name="content">Ich starte ein Prometheus-Raumschiff in mein</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">97772</field>
+		<field name="status_id">473793601584238592</field>
+		<field name="user_id">2323701847</field>
+		<field name="follower">21</field>
+		<field name="screen_name">geht_klar</field>
+		<field name="location">hamburg</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/429953896060968961/srPUuHUb.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">13:49:31</field>
+		<field name="content">WhatsApp-Gründer: Apple „borgt“ sich Funktionen von WhatsApp http://t.co/VRhG42dhKQ - Geht klar, oder?</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124887</field>
+		<field name="status_id">473916209751408640</field>
+		<field name="user_id">1412789642</field>
+		<field name="follower">0</field>
+		<field name="screen_name">gramm_dolata</field>
+		<field name="location">Bad Buchau</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_5.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:56:42</field>
+		<field name="content">Ich habe jetzt Spähersammlung! Und was ist mit dir? http://t.co/ABH0n5YkUj #ipad, #ipadgames, #gameinsight</field>
+		<field name="hashtag">ipad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124888</field>
+		<field name="status_id">473916209839480832</field>
+		<field name="user_id">341285089</field>
+		<field name="follower">2</field>
+		<field name="screen_name">friedel92</field>
+		<field name="location">Langenfeld, NRW, Germany</field>
+		<field name="image_url">http://pbs.twimg.com/profile_images/2732151990/611a9f7e7cfdaafcf6baabac5c1b3aa8.jpeg</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:56:42</field>
+		<field name="content">Ich habe 34,530 Goldmünzen gesammelt! http://t.co/cz96Ie4mhe #ipad, #ipadgames, #gameinsight</field>
+		<field name="hashtag">ipad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124889</field>
+		<field name="status_id">473916209935556609</field>
+		<field name="user_id">902555299</field>
+		<field name="follower">1</field>
+		<field name="screen_name">KadenAnnett</field>
+		<field name="location">Can Pastilla </field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_2.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:56:43</field>
+		<field name="content">Mein Einfluss hat Level 3 erreicht! Kannst du es besser? http://t.co/XylLMtsdNR #iphone,#iphonegames,#gameinsight</field>
+		<field name="hashtag">iphone</field>
+		<field name="hashtag">iphonegames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124890</field>
+		<field name="status_id">473916211021881345</field>
+		<field name="user_id">2415052739</field>
+		<field name="follower">0</field>
+		<field name="screen_name">seibel_tina</field>
+		<field name="location">Vienna</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_1.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:56:43</field>
+		<field name="content">Ich habe im Spiel The Tribez für #iPad die Mission `Baue Gebäude, um P...` vollendet. http://t.co/c7XhJJFg8K #ipadgames, #gameinsight</field>
+		<field name="hashtag">iPad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+	<doc>
+		<field name="id">124891</field>
+		<field name="status_id">473916215593689088</field>
+		<field name="user_id">2512722254</field>
+		<field name="follower">2</field>
+		<field name="screen_name">gorsckoff</field>
+		<field name="location">Essen-Werden</field>
+		<field name="image_url">http://abs.twimg.com/sticky/default_profile_images/default_profile_0.png</field>
+		<field name="date">2014-06-03</field>
+		<field name="time">21:56:44</field>
+		<field name="content">Ich habe 21,287 Goldmünzen gesammelt! http://t.co/5PIoulHXXU #ipad, #ipadgames, #gameinsight</field>
+		<field name="hashtag">ipad</field>
+		<field name="hashtag">ipadgames</field>
+		<field name="hashtag">gameinsight</field>
+		<field name="replied_to_status">-1</field>
+		<field name="replied_to_user">-1</field>
+		<field name="retweet">0</field>
+		<field name="retweeted">0</field>
+	</doc>
+</add>

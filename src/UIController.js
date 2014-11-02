@@ -3,7 +3,7 @@ SearchEngine.UIController = (function() {
 	$searchTerm,
 	$buttonShowRight,
 	$buttonSearch,
-	isRightSighthidden = false,
+	isRightSighthidden = true,
 
 	init = function() {
 		_initUI();
@@ -13,42 +13,31 @@ SearchEngine.UIController = (function() {
 
 	_handleClickOnShowRight = function () {
 		if (!isRightSighthidden) {
-			document.getElementById('options').className = "tab-pane jumbotron col-sm-5 my-jumbotron fade hidden";
+			$('#options').hide();
 			isRightSighthidden = true;
 		}else {
-			document.getElementById('options').className = "tab-pane jumbotron col-sm-5 my-jumbotron fade in";
+			$('#options').show();
 			isRightSighthidden = false;
 		}
-
 	},
 
 	_handleClickOnTerm = function () {
-		//kommt nicht bis hierher. wird nicht ausgeführt aus einem mir nicht ersichtlichen Grund
-		console.log("click");
 	},
 
 	_registerListeners = function () {
 		$buttonShowRight.on('click', _handleClickOnShowRight);
-
-		//um zu sehen, welches element angeklickt wird
-		$(document).click(function(e) {
-    		// console.log(e.target);//e.target will be the dom element that was clicked on
-		});
 		$searchTerm.on('click', _handleClickOnTerm);
 
 		_registerExtraListener();
 		_registerPopularSearchTermsClicklistener();
-
 	},
 
 	_registerPopularSearchTermsClicklistener = function () {
-		$("#popular-search-terms").on("click", "li", function () {
+		$("#last-search-terms").on("click", "li", function () {
 			var content = $(this).text();
 			document.getElementById('search-field').value = content;
 			$buttonSearch.submit();
-
-			// document.forms["Search"].submit();
-
+			useDismax = true;
 		});
 	},
 
@@ -66,6 +55,7 @@ SearchEngine.UIController = (function() {
 	},
 
 	_initUI = function () {
+		$('#options').hide();
 		$searchTerm = $('.previous-search-term');
 		$buttonShowRight = $('#button-show-right');
 		$buttonSearch = $('#search-button');

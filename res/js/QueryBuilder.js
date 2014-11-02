@@ -5,120 +5,139 @@ var idProducts = ["#check-produkt-1", "#check-produkt-2", "#check-produkt-3"];
 var idOwnFlag = ["#check-eigen-1", "#check-eigen-2", "#check-eigen-3", "#check-eigen-4"];
 var idOwnText = ["#text-eigen-1", "#text-eigen-2", "#text-eigen-3", "#text-eigen-4"];
 
-	var buildQuery = function() {
-		var queryLocation = "locations:";
-		var queryContent = "content:";
-		var queryPeople = "screen_name:";
-		var queryHashtag = "hashtag:"
-		var finalQuery = "";
+var eLocations = [];
+var eUsers = [];
+var eContent = [];
+var eDate = [];
 
-		if (buildQueryLocations() != "") {
-			queryLocation += buildQueryLocations();
-			queryContent += buildQueryLocations();
+var buildUserQuery = function() {
+	var queryContent = "q=";
+
+	if ($("#hashtag-search").val() != "") {
+		var hashtags = $("#hashtag-search").val().replace(" ", ",");
+		queryContent += "hashtag_ci:" + hashtags + " AND ";
+
+	}
+	if ($("#user-search").val() != "") {
+		var user = $("#user-search").val().replace(" ", ",");
+		queryContent += "screen_name:" + user + " AND ";
+	}
+	if ($("#location-search").val() != "") {
+		var location = $("#location-search").val().replace(" ", ",");
+		queryContent += "location:" + location + " AND ";
+	}
+	if ($("#content-search").val() != "") {
+		var content = $("#content-search").val().replace(" ", ",");
+		queryContent += "content:" + content;
+	} else {
+		queryContent += "content:*";
+	}
+
+	return queryContent;
+};
+
+var buildQuery = function() {
+	var queryContent = "";
+
+	if (buildQueryLocations() != "") {
+		queryContent += buildQueryLocations();
+	}
+
+	if (buildQueryPeople() != "") {
+		queryContent += buildQueryPeople();
+	}
+
+	if (buildQueryHashtags() != "") {
+		queryContent += buildQueryHashtags();
+	}
+
+	if (buildQueryProducts() != "") {
+		queryContent += buildQueryProducts();
+	}
+
+	return queryContent;
+};
+
+var buildQueryLocationsCustom = function() {
+	var location = $(value).val();
+	location = location.match(/(".*?")|(\S+)/g);
+	location = location.split(",");
+
+	return location;
+};
+
+var buildQueryUsersCustom = function() {
+	var location = $(value).val();
+	location = location.match(/(".*?")|(\S+)/g);
+	location = location.split(",");
+
+	return location;
+};
+
+var buildQueryHashtagsCustom = function() {
+	var location = $(value).val();
+	location = location.match(/(".*?")|(\S+)/g);
+	location = location.split(",");
+
+	return location;
+};
+
+var buildQueryLocations = function() {
+	var location = "";
+
+	$.each(idLocations, function(index, value) {
+		if($(value).is(":checked")) {
+			location += $(value).val() + " ";
 		}
+	});
 
-		if (buildQueryPeople() != "") {
-			queryPeople += buildQueryPeople();
-			queryContent += buildQueryPeople();
+	return location;
+};
+
+var buildQueryPeople = function() {
+	var people = "";
+
+	$.each(idPeople, function(index, value) {
+		if($(value).is(":checked")) {
+			people += $(value).val() + " ";
 		}
+	});
 
-		if (buildQueryHashtags() != "") {
-			queryHashtag += buildQueryHashtags();
+	return people;
+};
+
+var buildQueryHashtags = function() {
+	var hashtags = "";
+
+	$.each(idHashtags, function(index, value) {
+		if($(value).is(":checked")) {
+			hashtags += $(value).val() + " ";
 		}
+	});
 
-		if (buildQueryProducts() != "") {
-			queryContent += buildQueryProducts();
+	return hashtags;
+};
+
+var buildQueryProducts = function() {
+	var products = "";
+
+	$.each(idProducts, function(index, value) {
+		if($(value).is(":checked")) {
+			products += $(value).val() + " ";
 		}
+	});
 
-		// put it together
+	return products;
+};
 
-		if (queryContent.contains(",")) {
-			if (finalQuery != "") {
-				finalQuery += "+OR+"
-			}
-			finalQuery += queryContent;
+var buildQueryOwn = function() {
+	var own = "";
+
+	$.each(idFlag, function(index, value) {
+		if($(value).is(":checked")) {
+			own += $(idOwnText[index]).val() + " ";
 		}
+	});
 
-		if (queryPeople.contains(",")) {
-			if (finalQuery != "") {
-				finalQuery += "+OR+"
-			}
-			finalQuery += queryPeople;
-		}
-
-		if (queryLocation.contains(",")) {
-			if (finalQuery != "") {
-				finalQuery += "+OR+"
-			}
-			finalQuery += queryLocation;
-		}
-
-		if (queryHashtag.contains(",")) {
-			if (finalQuery != "") {
-				finalQuery += "+OR+"
-			}
-			finalQuery += queryHashtag;
-		}
-
-		return finalQuery
-	};
-
-	var buildQueryLocations = function() {
-		var location = "";
-
-		$.each(idLocations, function(index, value) {
-			if($(value).is(":checked")) {
-				location += $(value).val() + ",";
-			}
-		});
-
-		return location;
-	};
-
-	var buildQueryPeople = function() {
-		var people = "";
-
-		$.each(idPeople, function(index, value) {
-			if($(value).is(":checked")) {
-				people += $(value).val() + ",";
-			}
-		});
-
-		return people;
-	};
-
-	var buildQueryHashtags = function() {
-		var hashtags = "";
-
-		$.each(idHashtags, function(index, value) {
-			if($(value).is(":checked")) {
-				hashtags += $(value).val() + ",";
-			}
-		});
-
-		return hashtags;
-	};
-
-	var buildQueryProducts = function() {
-		var products = "";
-
-		$.each(idProducts, function(index, value) {
-			if($(value).is(":checked")) {
-				products += $(value).val() + ",";
-			}
-		});
-
-		return products;
-	};
-
-	var buildQueryOwn = function() {
-		var own = "";
-
-		$.each(idFlag, function(index, value) {
-			if($(value).is(":checked")) {
-				own += $(idOwnText[index]).val() + ",";
-			}
-		});
-
-		return own;
-	};
+	return own;
+};
