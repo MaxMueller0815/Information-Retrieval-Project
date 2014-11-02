@@ -117,9 +117,10 @@
         <!-- code ausschnitt von: https://gist.github.com/mnewt/4228037 abgeändert-->
         <div id="content">
           <ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-            <li class="active"><a href="#filter" data-toggle="tab">Erweiterte Suche</a></li>
+            <li class="active"><a href="#filter" data-toggle="tab">Erweitert</a></li>
             <li><a href="#suggestions" data-toggle="tab">Vorschläge</a></li>
             <li><a href="#favorites" data-toggle="tab">Favoriten</a></li>
+            <li><a href="#previous" data-toggle="tab">Verlauf</a></li>
           </ul>
           <div id="my-tab-content" class="tab-content">
 
@@ -146,12 +147,12 @@
                  <div id="day-3" class="date-box btn" value="04.06.2014"> 04.06.2014</div>
                  <div id="day-4" class="date-box btn" value="05.06.2014"> 05.06.2014</div>
                  <div id="day-5" class="date-box btn" value="06.06.2014"> 06.06.2014</div>
-                </div>-->
-                <button id="search-extended" type="button" class="search-again btn btn-info col-sm-12">Search Again!</button>
-            </div>
+               </div>-->
+               <button id="search-extended" type="button" class="search-again btn btn-info col-sm-12">Search Again!</button>
+             </div>
 
-          </div>
-          <div class="tab-pane" id="suggestions">
+           </div>
+           <div class="tab-pane" id="suggestions">
             <div class="vorschlag col-sm-3">
               <h3>Hashtags</h3>
               <div class="checkboxes">
@@ -220,6 +221,15 @@
               </div>
             </div>
           </div>
+
+          <div class="tab-pane" id="previous">
+            <div id="prev-container" class="tweets-container">
+              <div id="prev">
+                <div class="prev-punkt">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
 
@@ -248,9 +258,13 @@
             width: '100%',
             height: '660px'                  
           });
+          $('#prev-container').slimscroll({
+            color: '#33ccff',
+            size: '10px',
+            width: '100%',
+            height: '660px'                  
+          });
         });
-
-        </script>  
-
+        </script>
       </body>
       </html>

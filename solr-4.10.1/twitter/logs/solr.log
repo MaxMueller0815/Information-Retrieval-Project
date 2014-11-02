@@ -18854,3 +18854,279 @@ INFO  - 2014-11-02 14:38:59.443; org.apache.solr.core.SolrCore; [collection1] we
 INFO  - 2014-11-02 14:39:07.316; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=content:wwdc,apple&indent=true&wt=json&_=1414935547306} hits=49 status=0 QTime=0 
 INFO  - 2014-11-02 14:39:16.430; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc,iphone6&indent=true&wt=json&_=1414935556419} hits=13 status=0 QTime=1 
 INFO  - 2014-11-02 14:39:19.245; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=content:wwdc,iphone6&indent=true&wt=json&_=1414935559234} hits=13 status=0 QTime=1 
+INFO  - 2014-11-02 14:58:47.597; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:wwdc,iphone6&indent=true&rows=101&wt=json&_=1414936727587} hits=13 status=0 QTime=1 
+INFO  - 2014-11-02 15:04:43.957; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=content:wwdc,iphone6&indent=true&rows=101&wt=json&_=1414937083946} hits=13 status=0 QTime=2 
+ERROR - 2014-11-02 15:07:54.150; org.apache.solr.common.SolrException; org.apache.solr.common.SolrException: no field name specified in query and no default specified via 'df' param
+	at org.apache.solr.parser.SolrQueryParserBase.checkNullField(SolrQueryParserBase.java:700)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:720)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:541)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:299)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:185)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:139)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:96)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:151)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:50)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:141)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:148)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+INFO  - 2014-11-02 15:07:54.151; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:"Tim+Cook",wwdc&indent=true&rows=101&wt=json&_=1414937274140} status=400 QTime=2 
+INFO  - 2014-11-02 15:08:07.740; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:Tim,Cook,wwdc&indent=true&rows=101&wt=json&_=1414937287731} hits=16 status=0 QTime=1 
+INFO  - 2014-11-02 15:08:13.843; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=content:Tim,Cook,wwdc&indent=true&rows=101&wt=json&_=1414937293823} hits=16 status=0 QTime=6 
+INFO  - 2014-11-02 15:09:10.686; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=content:Swift&indent=true&rows=101&wt=json&_=1414937350676} hits=5 status=0 QTime=1 
+INFO  - 2014-11-02 15:09:23.127; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=content:Swift&indent=true&rows=101&wt=json&_=1414937363092} hits=5 status=0 QTime=1 
+ERROR - 2014-11-02 15:16:48.217; org.apache.solr.common.SolrException; java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.apache.solr.search.QParser.getSort(QParser.java:244)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:175)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+INFO  - 2014-11-02 15:16:48.217; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+iphon6&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=&rows=101&wt=json} status=500 QTime=6 
+ERROR - 2014-11-02 15:16:48.218; org.apache.solr.common.SolrException; null:java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.apache.solr.search.QParser.getSort(QParser.java:244)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:175)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+ERROR - 2014-11-02 15:16:54.890; org.apache.solr.common.SolrException; java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.apache.solr.search.QParser.getSort(QParser.java:244)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:175)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+INFO  - 2014-11-02 15:16:54.890; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+iphone6&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=&rows=101&wt=json} status=500 QTime=1 
+ERROR - 2014-11-02 15:16:54.891; org.apache.solr.common.SolrException; null:java.lang.NumberFormatException: For input string: ""
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at java.lang.Integer.parseInt(Unknown Source)
+	at org.apache.solr.search.QParser.getSort(QParser.java:244)
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:175)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:197)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:1967)
+	at org.apache.solr.servlet.SolrDispatchFilter.execute(SolrDispatchFilter.java:777)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:418)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:207)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:557)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:231)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:193)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:255)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:368)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72)
+	at org.eclipse.jetty.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:264)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Unknown Source)
+
+INFO  - 2014-11-02 15:17:05.339; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+iphone6&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=13 status=0 QTime=19 
+INFO  - 2014-11-02 15:17:41.146; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+iphone6&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=13 status=0 QTime=1 
+INFO  - 2014-11-02 15:23:45.862; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=wwdc+iphone6&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=13 status=0 QTime=3 
+INFO  - 2014-11-02 15:27:16.751; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q="Tim+Cook"+wwdc&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=14 status=0 QTime=5 
+INFO  - 2014-11-02 15:27:22.842; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q="Tim+Cook"+wwdc&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=14 status=0 QTime=2 
+INFO  - 2014-11-02 15:31:34.995; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=swift&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=5 status=0 QTime=2 
+INFO  - 2014-11-02 15:31:39.493; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=swift&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=5 status=0 QTime=2 
+INFO  - 2014-11-02 15:34:58.253; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=OSX+10.10&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=8 status=0 QTime=1 
+INFO  - 2014-11-02 15:35:03.591; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=OSX+10.10&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=8 status=0 QTime=1 
+INFO  - 2014-11-02 15:39:18.772; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Design+Redesign&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=7 status=0 QTime=2 
+INFO  - 2014-11-02 15:39:20.098; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Design+Redesign&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=7 status=0 QTime=1 
+INFO  - 2014-11-02 15:45:55.229; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=iCloud&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=5 status=0 QTime=1 
+INFO  - 2014-11-02 15:45:59.624; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=iCloud&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=5 status=0 QTime=1 
+INFO  - 2014-11-02 15:50:48.481; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Features&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=12 status=0 QTime=2 
+INFO  - 2014-11-02 15:50:53.035; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Features&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=12 status=0 QTime=1 
+INFO  - 2014-11-02 15:59:28.447; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=iwatch+uhr&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=7 status=0 QTime=2 
+INFO  - 2014-11-02 15:59:31.324; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=iwatch+uhr&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=7 status=0 QTime=1 
+INFO  - 2014-11-02 16:05:15.408; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=keynote+bühne&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=6 status=0 QTime=2 
+INFO  - 2014-11-02 16:05:23.156; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=keynote+bühne&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=6 status=0 QTime=1 
+INFO  - 2014-11-02 16:10:04.882; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Continuity&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=4 status=0 QTime=3 
+INFO  - 2014-11-02 16:10:09.893; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Continuity&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=4 status=0 QTime=0 
+INFO  - 2014-11-02 16:12:09.829; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=itunes+radio&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=5 status=0 QTime=1 
+INFO  - 2014-11-02 16:13:53.088; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=itunes+radio&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=5 status=0 QTime=2 
+INFO  - 2014-11-02 16:16:32.359; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Healthbook+Health&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=6 status=0 QTime=2 
+INFO  - 2014-11-02 16:16:33.875; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Healthbook+Health&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=6 status=0 QTime=2 
+INFO  - 2014-11-02 16:17:25.866; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Healthbook+Health+HealthKit&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=8 status=0 QTime=2 
+INFO  - 2014-11-02 16:17:27.158; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Healthbook+Health+HealthKit&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=8 status=0 QTime=2 
+INFO  - 2014-11-02 16:21:13.095; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=Maps&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=6 status=0 QTime=2 
+INFO  - 2014-11-02 16:21:23.077; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q=Maps&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=6 status=0 QTime=1 
+INFO  - 2014-11-02 16:25:02.353; org.apache.solr.core.SolrCore; [collection3] webapp=/solr path=/select params={q="Moscone+Center"+Ort&qt=dismax&qf=hashtag_ci+content&rows=101&wt=json} hits=1 status=0 QTime=2 
+INFO  - 2014-11-02 16:25:04.295; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q="Moscone+Center"+Ort&tie=0.1&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&rows=101&wt=json} hits=1 status=0 QTime=2 
+INFO  - 2014-11-02 20:17:16.929; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=w&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833542} status=0 QTime=22 
+INFO  - 2014-11-02 20:17:17.039; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=ww&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833543} status=0 QTime=0 
+INFO  - 2014-11-02 20:17:17.494; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwd&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833544} status=0 QTime=1 
+INFO  - 2014-11-02 20:17:17.668; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833545} status=0 QTime=0 
+INFO  - 2014-11-02 20:17:18.522; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery111106760842455458832_1414955833541&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414955833546} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:17:19.648; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833547} hits=1 status=0 QTime=5 
+INFO  - 2014-11-02 20:17:22.424; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:233128548&json.wrf=jQuery111106760842455458832_1414955833541&wt=json&_=1414955833548} hits=1 status=0 QTime=5 
+INFO  - 2014-11-02 20:18:24.055; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery1111049188948697841817_1414955903270&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414955903271} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:18:26.562; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery1111049188948697841817_1414955903270&wt=json&_=1414955903272} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:20:43.372; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery111109745733050952546_1414956039925&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956039926} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:20:44.368; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery111109745733050952546_1414956039925&wt=json&_=1414956039927} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:21:11.465; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery1111041836629101154243_1414956070454&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956070455} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:21:13.324; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:539252056&json.wrf=jQuery1111041836629101154243_1414956070454&wt=json&_=1414956070456} hits=1 status=0 QTime=4 
+INFO  - 2014-11-02 20:21:57.243; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery1111014705130902067898_1414956116186&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956116187} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:21:58.999; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:539252056&json.wrf=jQuery1111014705130902067898_1414956116186&wt=json&_=1414956116188} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:22:00.552; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:2176299713&json.wrf=jQuery1111014705130902067898_1414956116186&wt=json&_=1414956116189} hits=1 status=0 QTime=4 
+INFO  - 2014-11-02 20:22:32.130; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc&tie=0.1&json.wrf=jQuery111105614874930348712_1414956151128&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956151129} hits=10 status=0 QTime=1 
+INFO  - 2014-11-02 20:22:33.891; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151130} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:22:36.165; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:2176299713&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151131} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:22:38.677; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151132} status=0 QTime=1 
+INFO  - 2014-11-02 20:22:38.886; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+a&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151133} status=0 QTime=1 
+INFO  - 2014-11-02 20:22:38.974; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+ap&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151134} status=0 QTime=1 
+INFO  - 2014-11-02 20:22:39.086; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+app&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151135} status=0 QTime=1 
+INFO  - 2014-11-02 20:22:39.183; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+appl&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151136} status=0 QTime=0 
+INFO  - 2014-11-02 20:22:39.254; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/suggest params={q=wwdc+apple&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151137} status=0 QTime=0 
+INFO  - 2014-11-02 20:22:40.957; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+apple&tie=0.1&json.wrf=jQuery111105614874930348712_1414956151128&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956151138} hits=49 status=0 QTime=1 
+INFO  - 2014-11-02 20:22:42.217; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:702719247&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151139} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:22:44.800; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:2176299713&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151140} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:22:47.366; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery111105614874930348712_1414956151128&wt=json&_=1414956151141} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:23:38.539; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+apple&tie=0.1&json.wrf=jQuery1111009156889713539562_1414956216979&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956216980} hits=49 status=0 QTime=2 
+INFO  - 2014-11-02 20:23:39.989; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:34579517&json.wrf=jQuery1111009156889713539562_1414956216979&wt=json&_=1414956216981} hits=1 status=0 QTime=4 
+INFO  - 2014-11-02 20:23:43.269; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:702719247&json.wrf=jQuery1111009156889713539562_1414956216979&wt=json&_=1414956216982} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:23:45.378; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery1111009156889713539562_1414956216979&wt=json&_=1414956216983} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:23:46.766; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:2176299713&json.wrf=jQuery1111009156889713539562_1414956216979&wt=json&_=1414956216984} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:23:48.698; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery1111009156889713539562_1414956216979&wt=json&_=1414956216985} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:24:29.232; org.apache.solr.core.SolrCore; [collection1] webapp=/solr path=/select params={q=wwdc+apple&tie=0.1&json.wrf=jQuery11110936020756937674_1414956266612&qt=dismax&bf=div(ord(follower),300)^0.7&qf=hashtag_ci^2+content^1+&start=0&rows=10&wt=json&_=1414956266613} hits=49 status=0 QTime=1 
+INFO  - 2014-11-02 20:24:33.703; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:34579517&json.wrf=jQuery11110936020756937674_1414956266612&wt=json&_=1414956266614} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:24:34.778; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:78139585&json.wrf=jQuery11110936020756937674_1414956266612&wt=json&_=1414956266615} hits=1 status=0 QTime=0 
+INFO  - 2014-11-02 20:24:37.410; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:2176299713&json.wrf=jQuery11110936020756937674_1414956266612&wt=json&_=1414956266616} hits=1 status=0 QTime=1 
+INFO  - 2014-11-02 20:24:39.230; org.apache.solr.core.SolrCore; [collection2] webapp=/solr path=/select params={q=user_id:233128548&json.wrf=jQuery11110936020756937674_1414956266612&wt=json&_=1414956266617} hits=1 status=0 QTime=1 

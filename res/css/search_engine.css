@@ -102,6 +102,10 @@ h2{
 	padding:10px;
 }
 
+#options {
+	width: 500px;
+}
+
 .one-tweet, .term-box{
 	border-color: lightgrey;
 	border-style: solid;
@@ -217,6 +221,11 @@ h2{
 }
 
 #fav-container {
+	margin-top: 10px;
+	height: 900px;
+}
+
+#prev-container {
 	margin-top: 10px;
 	height: 900px;
 }

@@ -60,7 +60,7 @@ var useDismax = true;
 		});
 	}
 
-		requestFullTextUnconverted = function(term) {
+	requestFullTextUnconverted = function(term) {
 		var request = "q="+ term +"&qf=hashtag_ci^2 content^1 &bf=div(ord(follower),300)^0.7&tie=0.1";
 		$.ajax({
 			url: "http://localhost:8983/solr/collection1/select?qt=dismax&rows=10&start="+stackCount+"&"+ request +"&wt=json",
@@ -132,6 +132,7 @@ var useDismax = true;
 
 	_regOnClickInfo = function (doc) {
 		$("#"+doc.status_id+"-info").click(function () {
+			_addPrev($("#"+doc.status_id).html(), doc.status_id);
 			var tweet = $(this).html();
 			$("#modal-content").empty();
 			$("#modal-content").append(_buildDetailedTweet(doc));
@@ -173,6 +174,17 @@ var useDismax = true;
 			"<div id='"+ id +"-fav' class='one-fav-punkt'>"+
 			"<div class='one-tweet col-sm-9'>" + tweet + "</div>"+
 			"</div>"
+			);
+		_registerRemoveListener(id);
+		_regOnClickOnTerms();
+	}
+
+	_addPrev = function(tweet, id) {
+		favIds.push(id);
+		$(".prev-punkt").append(
+			"<div id='"+ id +"-prev' class='one-fav-punkt'>"+
+			"<div class='one-tweet col-sm-9'>" + tweet + "</div>"+
+			"<div class='one-tweet col-sm-9'>"+$("#search-field").val()+"</div>"
 			);
 		_registerRemoveListener(id);
 		_regOnClickOnTerms();
