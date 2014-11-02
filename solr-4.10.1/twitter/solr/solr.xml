@@ -3,6 +3,7 @@
 	<cores adminPath="/admin/cores">
 		<core name="collection1" instanceDir="tweets" />
 		<core name="collection2" instanceDir="users" />
+		<core name="collection3" instanceDir="tweets_bm25" />
 
 		<shardHandlerFactory name="shardHandlerFactory" class="HttpShardHandlerFactory">
      		<str name="urlScheme">${urlScheme:}</str>

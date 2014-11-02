@@ -212,7 +212,7 @@ var useDismax = true;
 		"<span class='tweet-date name-container-content'> "+ doc.date + " </span>"+
 		"<span class='tweet-time name-container-content'> "+ doc.time + " </span></div>"+
 		"<div class='text-container col-sm-10'>"+
-		"<div class='text'>"+ content +"</div> </div>"+
+		"<div class='text'>"+ content + " ID: " + doc.status_id +"</div> </div>"+
 		"</div>";
 		return output;
 	}
